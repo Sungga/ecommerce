@@ -1,0 +1,75 @@
+:root {
+    --color-primary: rgb(10, 104, 255);
+    --color-shadow-primary: rgb(52, 130, 255);
+    --color-white: #fff;
+    --color-black: #000;
+    --color-border: #ccc;
+    --color-background_website: rgb(231, 247, 255, 0.5);
+
+    --size-text: 1.5rem;
+
+    --height-header: 12rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: "Roboto", sans-serif;
+
+    scroll-behavior: smooth;
+}
+
+.grid {
+    max-width: 120rem;
+    margin: auto;
+}
+
+/* .cursor {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    border: 2px solid var(--color-black);
+    z-index: 999;
+    position: relative;
+    top: 0;
+    left: 0;
+    box-shadow: 0 0 4px 0 var(--color-black);
+    animation: aniCursor .5s infinite alternate;
+
+    pointer-events: none;
+}
+
+.expanding {
+    animation: aniCursorClick .4s forwards;
+    box-shadow: 0 0 4px 0 red;
+    border: 2px solid red;
+} */
+
+/* animation */
+/* @keyframes aniCursor {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(0.7);
+    }
+}
+
+@keyframes aniCursorClick {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(3);
+    }
+    100% {
+        transform: scale(1);
+        opacity: none;
+    }
+}  */

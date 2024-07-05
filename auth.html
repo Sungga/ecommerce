@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- title -->
+    <title>Đăng Nhâp | Đăng Ký Tài Khoản</title>
+
+    <!-- icon -->
+    <link rel="icon" href="./access/img/logo_bugatti.webp" type="image/x-icon" />
+
+    <!-- font google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <!-- font google for logo -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- reset css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+
+    <!-- css -->
+    <link rel="stylesheet" href="access/css/base.css">
+    <link rel="stylesheet" href="access/css/auth.css">
+</head>
+<body>
+    <div id="auth">
+        <div class="auth__container">
+            <div class="login">
+                <h1>ĐĂNG NHẬP</h1>
+                <h2>Đăng ký <i class="fa-solid fa-arrow-right" style="color: rgb(10, 104, 255);"></i></h2>
+                <form action="POST">
+                    <div class="auth__item">
+                        <label for="name">Tài khoản:</label>
+                        <input type="text" name="name" id="name" required>
+                    </div>
+                    <div class="auth__item">
+                        <label for="pass">Mật khẩu:</label>
+                        <input type="text" name="pass" id="pass" required>
+                    </div>
+                    <div class="auth__item">
+                        <p><a href="#">Quên mật khẩu!</a></p>
+                        <input type="submit" value="Đăng nhập" name="login">
+                    </div>
+                </form>
+            </div>
+            <div class="signup">
+                <h1>ĐĂNG KÝ</h1>
+                <h2><i class="fa-solid fa-arrow-left" style="color: #ffffff;"></i> Đăng nhập</h2>
+                <form action="POST">
+                    <div class="auth__item">
+                        <label for="name">Tài khoản:</label>
+                        <input type="text" name="name" id="name" required>
+                    </div>
+                    <div class="auth__item">
+                        <label for="pass">Mật khẩu:</label>
+                        <input type="text" name="pass" id="pass" required>
+                    </div>
+                    <div class="auth__item">
+                        <label for="pass">Mật khẩu:</label>
+                        <input type="text" name="repass" id="repass" required>
+                    </div>
+                    <div class="auth__item">
+                        <label for="pass">Số điện thoại:</label>
+                        <input type="tel" name="phone" id="phone" required>
+                    </div>
+                    <div class="auth__item">
+                        <input type="submit" value="Đăng ký" name="signup">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    <!-- js -->
+    <script src="./access/js/js_auth.js"></script>
+
+    <!-- js change cursor -->
+    <script src="./access/js/js_cursor.js"></script>
+</body>
+</html>
