@@ -31,14 +31,14 @@ function showBigImg(number) {
 arrangeSmallImg(0);
 
 btnToLeft.addEventListener('click', function() {
-    if(numberOfFirstImg != smallItemImg.length - 5) {
-        arrangeSmallImg(numberOfFirstImg + 1);
+    if(numberOfFirstImg != 0) {
+        arrangeSmallImg(numberOfFirstImg - 1);
     }
 });
 
 btnToRight.addEventListener('click', function() {
-    if(numberOfFirstImg != 0) {
-        arrangeSmallImg(numberOfFirstImg - 1);
+    if(numberOfFirstImg != smallItemImg.length - 5) {
+        arrangeSmallImg(numberOfFirstImg + 1);
     }
 });
 
