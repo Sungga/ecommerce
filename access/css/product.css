@@ -242,6 +242,10 @@
     color: var(--color-white);
 }
 
+.product__right .product__attribute {
+    width: auto;
+}
+
 .product__attribute p {
     font-size: 1.5rem;
     margin-bottom: 8px;
@@ -267,6 +271,58 @@
 .product__attribute input[type="radio"]:checked + label {
     background-color: var(--color-primary);
     color: var(--color-white);
+}
+
+.product__attribute .product__quantity {
+    position: relative;
+    width: auto;
+    width: 140px;
+}
+
+.product__attribute .product__quantity .btnSub {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 44px;
+    height: 44px;
+    box-sizing: border-box;
+    line-height: 44px;
+    text-align: center;
+    border: 1px solid var(--color-primary);
+    user-select: none;
+    cursor: pointer;
+}
+
+.product__attribute .product__quantity .btnAdd {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 44px;
+    height: 44px;
+    box-sizing: border-box;
+    line-height: 44px;
+    text-align: center;
+    border: 1px solid var(--color-primary);
+    user-select: none;
+    cursor: pointer;
+}
+
+.product__attribute .product__quantity input {
+    padding: 12px 44px;
+    font-size: 1.5rem;
+    width: 140px;
+    height: 44px;
+    box-sizing: border-box;
+    text-align: center;
+    border: 1px solid var(--color-primary);
+    outline: none;
+
+    -moz-appearance: textfield; /* Firefox */
+}
+.product__attribute .product__quantity input::-webkit-outer-spin-button,
+.product__attribute .product__quantity input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
 }
 
 .product__action input {
