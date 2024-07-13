@@ -1,3 +1,4 @@
+// js for img product   
 let bigImg = document.querySelector('.product__left--bigImg img');
 let smallItemImg = document.querySelectorAll('.product__left--smallImg .smallImg__container .item');
 let smallImg = document.querySelectorAll('.product__left--smallImg .smallImg__container .item img');
@@ -47,5 +48,22 @@ smallItemImg.forEach(function(item, index) {
         addClassFocus(index);
         showBigImg(index)
     });
+});
+
+// js for sub and add quantity
+let btnSub = document.querySelector('.product__attribute .product__quantity .btnSub');
+let btnAdd = document.querySelector('.product__attribute .product__quantity .btnAdd');
+let inputQuantity = document.querySelector('.product__attribute .product__quantity input');
+
+btnSub.addEventListener('click', function() {
+    let currentValue = parseInt(inputQuantity.value, 10);
+    if (currentValue > parseInt(inputQuantity.min, 10)) {
+        inputQuantity.value = currentValue - 1;
+    }
+});
+
+btnAdd.addEventListener('click', function() {
+    let currentValue = parseInt(inputQuantity.value, 10);
+    inputQuantity.value = currentValue + 1;
 });
 
