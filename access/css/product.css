@@ -118,3 +118,169 @@
     height: 100%;
     object-fit: contain;
 }
+
+.product__right {
+    width: calc(100% / 5 * 3 - 8px);
+    padding: 16px 0 0;
+}
+
+.product__right .product__item {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.product__title span {
+    font-size: 2rem;
+    color: var(--color-black);
+    line-height: 3rem;
+}
+
+.product__rating a {
+    font-size: 1.5rem;
+    padding: 0 16px;
+    color: var(--color-black);
+    text-decoration: none;
+    border-right: 1px solid var(--color-black);
+}
+
+.product__rating a:first-child {
+    padding: 0 16px 0 0;
+}
+
+.product__rating a:last-child {
+    border: none;
+}
+
+.product__price span:first-child {
+    color: var(--color-pale);
+    font-size: calc(var(--size-text) - 0.2rem);
+    font-style: italic;
+    text-decoration: line-through;
+    margin-right: 8px;
+}
+
+.product__price span:last-child {
+    color: var(--color-red);
+    font-size: calc(var(--size-text) + 0.5rem);
+}
+
+.product__voucher {
+    position: relative;
+    width: auto !important;
+    display: inline-block;
+}
+
+.product__voucher span {
+    display: inline-block;
+    font-size: 1.5rem;
+    color: var(--color-white);
+    padding: 12px 12px;
+    background-color: var(--color-primary);
+    cursor: pointer;
+}
+
+.product__voucher:hover .product__voucher--list {
+    display: block;
+}
+
+.product__voucher--list {
+    display: none;
+    width: 300px;
+    padding: 8px;
+    box-sizing: border-box;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    background-color: var(--color-white);
+    border: 1px solid var(--color-primary);
+    max-height: 160px;
+    overflow-y: scroll;
+}
+
+.product__voucher--item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 4px;
+    padding: 8px 0;
+    border-bottom: 1px solid var(--color-primary);
+}
+
+.product__voucher--item:last-child {
+    border: none;
+}
+
+.product__voucher--item p:first-child {
+    font-size: 1.2rem;
+    width: 32px;
+    height: 16px;
+    text-align: center;
+    padding: 4px;
+    color: var(--color-white);
+    background-color: var(--color-primary);
+}
+
+.product__voucher--item p:nth-child(2) {
+    font-size: 1.5rem;
+    width: 60%;
+    text-align: left;
+    color: var(--color-black);
+    line-height: 26.85px;
+}
+
+.product__voucher--item input {
+    font-size: 1.5rem;
+    padding: 4px;
+    color: var(--color-black);
+    background-color: var(--color-white);
+    border: 1px solid var(--color-primary);
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.product__voucher--item input:hover {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+}
+
+.product__attribute p {
+    font-size: 1.5rem;
+    margin-bottom: 8px;
+}
+
+.product__attribute input[type="radio"] {
+    display: none;
+}
+
+.product__attribute label {
+    box-sizing: border-box;
+    font-size: 1.5rem;
+    min-width: 50px;
+    padding: 8px 16px;
+    margin: 0 8px 8px 0;
+    border: 1px solid var(--color-primary);
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+    user-select: none;
+}
+
+.product__attribute input[type="radio"]:checked + label {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+}
+
+.product__action input {
+    background-color: var(--color-white);
+    border: 1px solid var(--color-primary);
+    padding: 12px;
+    font-size: 1.5rem;
+    min-width: 190px;
+    cursor: pointer;
+    margin-right: 8px;
+    transition: all .3s ease;
+}
+
+.product__action input:hover {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+}
