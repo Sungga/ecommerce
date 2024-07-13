@@ -97,9 +97,11 @@ input[type="number"]::-webkit-inner-spin-button {
     background-color: var(--color-primary);
 }
 
-.listProduct__listTop {
-    height: 35px;
+.listProduct__list {
     width: calc(100% / 5 * 4);
+}
+
+.listProduct__listTop {
     display: flex;
     justify-content: space-between;
     margin-bottom: 36px;
@@ -138,4 +140,116 @@ input[type="number"]::-webkit-inner-spin-button {
     background-color: var(--color-primary);
 }
 
+.listProduct__listCenter {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 36px;
+}
+
+.listProduct__about--item {
+    background-color: var(--color-white);
+    width: calc(100% / 4 - 8px);
+    padding: 8px 0 8px 0;
+    margin: 4px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid var(--color-border);
+    transition: all 0.3s ease-in-out;
+}
+
+.listProduct__about--item:hover {
+    border: 1px solid #000;
+    box-shadow: 0px 0px 2px 2px #ccc;
+}
+
+.listProduct__about--item a {
+    width: 90%;
+    height: 250px;
+    border: 1px solid var(--color-border);
+    display: block;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+.listProduct__about--item:hover a {
+    border: 1px solid #000;
+    box-shadow: 0px 0px 2px 2px #ccc;
+}
+
+.listProduct__about--item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.3s ease-in-out;
+}
+
+.listProduct__about--item:hover img {
+    transform: scale(1.01);
+}
+
+.listProduct__about--item p {
+    font-size: 1.4rem;
+    margin-top: 8px;
+
+    /* gioi han 1 dong` */
+    line-height: 2rem;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+}
+
+.listProduct__about--item > div {
+    margin-top: 8px;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.listProduct__about--quantity,
+.listProduct__about--rate {
+    text-align: right !important;
+}
+
+.listProduct__about--item:not(.category__item) p{
+    width: 90%;
+    text-align: left;
+    padding: 2px 0;
+    font-size: 1.5rem;
+}
+
+.listProduct__about--item:not(.category__item) span {
+    width: 90%;
+    text-align: left;
+    padding: 2px 0;
+    font-size: 1.3rem;
+    font-style: italic;
+}
+
+.listProduct__listBottom {
+    margin-bottom: 36px;
+    text-align: center;
+}
+
+.listProduct__listBottom a {
+    color: var(--color-black);
+    text-decoration: none;
+    font-size: 1.5rem;
+    margin: 0 2rem;
+    width: 32px;
+    padding: 8px;
+    border: 1px solid var(--color-primary);
+    text-align: center;
+    display: inline-block;
+    transition: all .3s ease;
+}
+
+.listProduct__listBottom a:hover,
+.listProduct__listBottom .focus {
+    color: var(--color-white);
+    background-color: var(--color-primary);
+}
 

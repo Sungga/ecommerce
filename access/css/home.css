@@ -156,6 +156,25 @@
 .home__about--item p {
     font-size: 1.4rem;
     margin-top: 8px;
+
+    /* gioi han 1 dong` */
+    line-height: 2rem;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+}
+
+.home__about--item > div {
+    margin: 8px 0 0;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.home__about--quantity,
+.home__about--rate {
+    text-align: right !important;
 }
 
 .home__about--item:not(.category__item) span {
@@ -163,11 +182,18 @@
     font-style: italic;
 }
 
-.home__about--item:not(.category__item) p,
+.home__about--item:not(.category__item) p{
+    width: 90%;
+    text-align: left;
+    padding: 2px 0;
+    font-size: 1.5rem;
+}
+
 .home__about--item:not(.category__item) span {
     width: 90%;
     text-align: left;
     padding: 2px 0;
+    font-size: 1.3rem;
 }
 
 .home__about--seeMore {

@@ -1,5 +1,9 @@
 :root {
+    /* --color-primary: rgb(10, 104, 255); */
     --color-primary: rgb(10, 104, 255);
+    /* --color-primary: rgb(140, 0, 255);
+    --color-primary-bottom: rgb(125, 44, 255); */
+    /* --color-primary: #f53d2d; */
     --color-primary-regular: rgb(60, 135, 255);
     --color-shadow-primary: rgb(52, 130, 255);
     --color-white: #fff;
