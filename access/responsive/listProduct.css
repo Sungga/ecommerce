@@ -12,95 +12,47 @@
         margin-top: 6px;
         margin-left: 8px;
     }
+
+    .listProduct__bottom--iconClose {
+        font-size: 2.0rem;
+        position: absolute;
+        top: 0;
+        right: 0;
+        color: black;
+        padding: 2px;
+        margin: 8px 8px 0 0;
+    }
+
     
     .listProduct__bottom--left {
-        width: calc(100% / 5 - 8px);
+        width: 100%;
+        height: 100vh;
         padding-right: 8px;
-        display: none;
-    }
-    
-    .listProduct__filter--title {
-        font-size: 2rem;
-        margin: 0 0 16px;
-        padding-bottom: 16px;
-        border-bottom: 1px solid var(--color-primary);
-    }
-    
-    .listProduct__filterItem {
-        margin-bottom: 16px;
-        padding-bottom: 16px;
-        border-bottom: 1px solid var(--color-primary);
-    }
-    
-    .listProduct__filterItem--title {
-        font-size: 1.5rem;
-        margin-bottom: 8px;
-    }
-    
-    .listProduct__filterPrice span {
-        font-size: 1.5rem;
-        width: 32px;
-        display: inline-block;
-    }
-    
-    .listProduct__filterPrice input {
-        font-size: 1.5rem;
-        outline: none;
-        border: 1px solid var(--color-primary);
-        width: 192px;
-        padding: 4px;
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1000;
+        background-color: white;
+        padding: 8px 32px 0 32px;
         box-sizing: border-box;
-        margin: 4px 0;
+    }  
+
+    .listProduct__filterPrice span {
+        position: absolute;
+        margin-top: 4px;
     }
-    
-    /* Chrome, Safari, Edge, Opera */
-    .listProduct__filterPrice input[type="number"]::-webkit-outer-spin-button,
-    input[type="number"]::-webkit-inner-spin-button {
-        -webkit-appearance: none;
+
+    .listProduct__filterPrice input {
+        margin: 0px 83px;
+        width: 61%;
+        margin-bottom: 16px;
     }
-    
-    /* Firefox */
-    .listProduct__filterPrice input[type="number"] {
-        -moz-appearance: textfield;
-    }
-    
-    .listProduct__filterAddress--item,
-    .listProduct__filterShop--item {
-        padding: 4px 0;
-    }
-    
-    .listProduct__filterAddress--item,
-    .listProduct__filterShop--item input {
-        margin-right: 8px;
-    }
-    
-    .listProduct__filterAddress--item,
-    .listProduct__filterShop--item label,
-    .listProduct__filterBtn input {
-        font-size: 1.5rem;
-    }
-    
-    .listProduct__filterBtn input {
-        font-size: 1.5rem;
-        padding: 12px;
-        width: 100%;
-        border: 1px solid var(--color-primary);
-        background-color: var(--color-white);
-        cursor: pointer;
-    
-        transition: all .3s ease;
-    }
-    
-    .listProduct__filterBtn input:hover {
-        width: 100%;
-        color: var(--color-white);
-        background-color: var(--color-primary);
-    }
+
     
     .listProduct__list {
         width :100%;
-         /* width: calc(100% / 3);  */
-         position: relative;
+        position: relative;
     }
     
     .listProduct__listTop {
@@ -110,46 +62,15 @@
         margin-left: 48px;
     }
     
-    .listProduct__listTop--left select {
-        padding: 8px 16px;
-        margin-left: 4px;
-        font-size: 1.5rem;
-        outline: none;
-        border: 1px solid  var(--color-primary);
-        cursor: pointer;
-        
     
-        -webkit-appearance: none;  /* Safari và Chrome */
-        -moz-appearance: none;     /* Firefox */
-        appearance: none;          /* Chuẩn chung */
-    }
     
     .listProduct__listTop--right {
         display: flex;
     }
     
-    .listProduct__listTop--right a {
-        margin-right: 12px;
-        padding: 8px 16px;
-        font-size: 1.5rem;
-        border: 1px solid var(--color-primary);
-        text-decoration: none;
-        color: var(--color-black);
     
-        transition: all .3s ease;
-    }
     
-    .listProduct__listTop--right a:hover {
-        color: var(--color-white);
-        background-color: var(--color-primary);
-    }
-    
-    .listProduct__listCenter {
-        display: flex;
-        justify-content: space-around;
-        flex-wrap: wrap;
-        margin-bottom: 36px;
-    }
+   
     
     .listProduct__about--item {
         background-color: var(--color-white);
@@ -164,99 +85,5 @@
         transition: all 0.3s ease-in-out;
         box-sizing: border-box;
     }
-    
-    .listProduct__about--item:hover {
-        border: 1px solid #000;
-        box-shadow: 0px 0px 2px 2px #ccc;
-    }
-    
-    .listProduct__about--item a {
-        width: 90%;
-        height: 250px;
-        border: 1px solid var(--color-border);
-        display: block;
-        overflow: hidden;
-        transition: all 0.3s ease-in-out;
-    }
-    
-    .listProduct__about--item:hover a {
-        border: 1px solid #000;
-        box-shadow: 0px 0px 2px 2px #ccc;
-    }
-    
-    .listProduct__about--item img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        transition: all 0.3s ease-in-out;
-    }
-    
-    .listProduct__about--item:hover img {
-        transform: scale(1.01);
-    }
-    
-    .listProduct__about--item p {
-        font-size: 1.4rem;
-        margin-top: 8px;
-    
-        /* gioi han 1 dong` */
-        line-height: 2rem;
-        overflow: hidden;
-        display: -webkit-box;
-        -webkit-box-orient: vertical;
-        -webkit-line-clamp: 1;
-    }
-    
-    .listProduct__about--item > div {
-        margin-top: 8px;
-        width: 90%;
-        display: flex;
-        justify-content: space-between;
-    }
-    
-    .listProduct__about--quantity,
-    .listProduct__about--rate {
-        text-align: right !important;
-    }
-    
-    .listProduct__about--item:not(.category__item) p{
-        width: 90%;
-        text-align: left;
-        padding: 2px 0;
-        font-size: 1.5rem;
-    }
-    
-    .listProduct__about--item:not(.category__item) span {
-        width: 90%;
-        text-align: left;
-        padding: 2px 0;
-        font-size: 1.3rem;
-        font-style: italic;
-    }
-    
-    .listProduct__listBottom {
-        margin-bottom: 36px;
-        text-align: center;
-    }
-    
-    .listProduct__listBottom a {
-        color: var(--color-black);
-        text-decoration: none;
-        font-size: 1.5rem;
-        margin: 0 2rem 8px;
-        width: 32px;
-        padding: 8px;
-        border: 1px solid var(--color-primary);
-        text-align: center;
-        display: inline-block;
-        transition: all .3s ease;
-    }
-    
-    .listProduct__listBottom a:hover,
-    .listProduct__listBottom .focus {
-        color: var(--color-white);
-        background-color: var(--color-primary);
-    }
-    
-    
 }
+    
