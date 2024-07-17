@@ -15,6 +15,10 @@
     box-shadow: 0 1px 3px 1px #767676;
 }
 
+.menu__box {
+    display: none;
+}
+
 .header__header-top {
     width: 100%;
     height: calc(var(--height-header) / 2);
@@ -333,6 +337,16 @@
 .header__mess {
     position: relative;
 }
+.header__mess  .word{
+    display: none;
+    font-size: var(--size-text);
+    color: var(--color-black) !important;
+}
+                                                        
+.header__mess  a{
+    text-decoration: none;
+
+}
 
 .header__mess:hover .mess__list {
     display: block;
@@ -438,12 +452,23 @@
     margin-left: 20px;
 }
 
+.header__cart a{
+    text-decoration: none;
+}
+
 .header__cart .icon__cart,
 .header__mess .icon__mess {
     font-size: 2rem;
     cursor: pointer;
     position: relative;
 }
+
+.header__cart .word{
+    display: none;
+    font-size: var(--size-text);
+    color: var(--color-black) !important;
+}
+
 
 .header__header-bottom--right .have__mess::after {
     content: "";

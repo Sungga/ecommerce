@@ -16,6 +16,7 @@
     --size-text: 1.5rem;
 
     --height-header: 12rem;
+    --height-header-mobile: 6rem;
 }
 
 * {

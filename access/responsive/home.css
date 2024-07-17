@@ -123,6 +123,7 @@
 
 .home__about--item:not(.category__item) {
     background-color: var(--color-white);
+    margin: 3px;
 }
 
 .home__about--item:not(.category__item):hover {
