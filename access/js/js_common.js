@@ -4,7 +4,7 @@ let historySearch = document.querySelector('.search-history');
 let menu = document.querySelector('.menu__box');
 let openmenu = document.querySelector('.icon_menu');
 let exitmenu = document.querySelector('.icon_exit');
-let search = document.querySelector('.menu__box icon_search i');
+let search = document.querySelector('.icon_search i');
 
 searchBtn.addEventListener('focus', function() {
     historySearch.style.display = 'block';
@@ -30,9 +30,11 @@ search.addEventListener('click', function(){
 })
 
 // --------------------<< thoát ô tìm kiếm >>----------------
-document.addEventListener('click', function(event) {
-    var isClickInside = search.contains(event.target) || searchBtn.contains(event.target);
-    if (!isClickInside) {
-        searchBtn.style.display = 'none';
-    }
-})
+if (window.matchMedia('only screen and (max-width: 739px)').matches) {
+    document.addEventListener('click', function(event) {
+        var isClickInside = search.contains(event.target) || searchBtn.contains(event.target);
+        if (!isClickInside ) {
+            searchBtn.style.display = 'none';
+        }
+    })
+  }
