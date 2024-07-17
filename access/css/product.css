@@ -550,3 +550,18 @@
 .product__detail--item div {
     font-size: 1.4rem;
 }
+
+.product__desc {
+    padding: 36px 0;
+    border-top: 1px solid var(--color-primary);
+}
+
+.product__desc p {
+    font-size: 1.4rem;
+    margin-bottom: 12px;
+}
+
+.product__review {
+    padding: 36px 0;
+    border-top: 1px solid var(--color-primary);
+}
