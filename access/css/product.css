@@ -565,3 +565,110 @@
     padding: 36px 0;
     border-top: 1px solid var(--color-primary);
 }
+
+.product__review--rating {
+    display: flex;
+    padding-bottom: 16px;
+}
+
+.product__rating--left {
+    width: 160px;
+}
+
+.product__rating--left p {
+    font-size: 1.8rem;
+    padding: 8px;
+    margin-right: 20px;
+    text-align: center;
+}
+
+.product__rating--left span {
+    font-size: 3rem;
+}
+
+.product__rating--right {
+    margin-left: 8px;
+    width: calc(100% - 160px);
+}
+
+.product__rating--right div {
+    text-decoration: none;
+    border: 1px solid var(--color-primary);
+    min-width: 6.25rem;
+    display: inline-block;
+    font-size: 1.5rem;
+    padding: 8px 12px;
+    margin: 0 8px 8px 0;
+    text-align: center;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.product__rating--right div.select {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+}
+
+.product__rating--right div:hover {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+}
+
+.product__comment--item {
+    display: flex;
+    padding: 36px 0;
+    border-bottom: 1px solid var(--color-super-pale);
+}
+
+.product__comment--avt {
+    width: 40px;
+    height: 40px;
+}
+
+.product__comment--avt img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.product__comment--main {
+    box-sizing: border-box;
+    width: calc(100% - 40px);
+    margin-left: 16px;
+}
+
+.product__comment--main p {
+    font-size: 1.3rem;
+    margin-bottom: 8px;
+    line-height: 20px;
+}
+
+.product__comment--main p:nth-child(2) {
+    color: var(--color-pale);
+}
+
+.product__comment--smallImg {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.product__comment--smallImg :where(img, video) {
+    width: 72px;
+    height: 72px;
+    object-fit: cover;
+    margin: 0 12px 12px 0;
+    box-sizing: border-box;
+}
+
+.product__comment--smallImg :where(img, video).select {
+    border: 1px solid var(--color-primary);
+    padding: 2px;
+}
+
+.product__comment--bigImg :where(img, video) {
+    max-width: 90%;
+    max-height: 400px; /* Hoặc bất kỳ giá trị nào bạn mong muốn */
+    width: auto;
+    height: auto;
+}
