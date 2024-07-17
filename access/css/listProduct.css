@@ -14,6 +14,10 @@
     width: 100%;
 }
 
+.listProduct__bottom--iconMenu {
+    display: none;
+}
+
 .listProduct__bottom--left {
     width: calc(100% / 5 - 8px);
     padding-right: 8px;
