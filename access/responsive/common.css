@@ -124,10 +124,10 @@
 
 .header__header-bottom--center input {
     position: absolute;
-    top: -28px;
+    top: -34px;
     left: 8px;
-    width: 100%;
-    height: calc(100% * 2/5);
+    width: 77%;
+    height: 83%;
     margin: auto;
     padding: 8px 62px 8px 62px;
     font-size: 1.5rem;
@@ -154,8 +154,37 @@
     border-left: 4px solid var(--color-primary);
     border-radius: 50% 4px 4px 50%;
     cursor: pointer;
-
     transition: all 0.3s ease;
+}
+.header__header-bottom--center .icon_search i {
+    position: absolute;
+    top: -10px;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 4rem;
+    font-size: 1.5rem;
+    border-left: 4px solid var(--color-primary);
+    border-radius: 50% 4px 4px 50%;
+    cursor: pointer;
+    /* z-index: 1900; */
+    transition: all 0.3s ease;
+}
+.header__header-bottom--center .icon_search:hover i {
+    /* background-color: rgb(231, 231, 231); */
+    box-shadow: 4px 2px 5px 0px rgba(0, 0, 0, 0.75);
+    font-size: 1.6rem;
+}
+.header__header-bottom--center .icon_search input {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    margin-top: 34px;
+    z-index: 2000;
+    display: none;
 }
 
 .header__header-bottom--right {
@@ -257,6 +286,7 @@
     left: 9px;
     /* padding-bottom: 1.6rem; */
     width: 50%;
+    height: 8%;
     display: block;
 }
 
@@ -283,6 +313,19 @@
     top: 0;
     cursor: pointer;
     font-size: 40px;
+}
+.menu__box .header__mess .mess__list {
+    display: none;
+    top: 58px;
+    right: 0;
+    left: 63px;
+    width: 263%;
+    border: 1px solid var(--color-black);
+
+    /* transition: all 0.3s ease-in-out; */
+    transform-origin: calc(100%) top;
+    animation: animationForShowMenus ease-in 0.3s;
+    will-change: opacity, transform;
 }
 
 .header__footer {
@@ -367,10 +410,11 @@
 
 .icon_menu span{
     position: absolute;
-    top: 1.4rem;
+    top: 1.2rem;
     left: 1rem;
     color: var(--color-white);
     cursor: pointer;
     font-size: 4rem;
+    display: block;
 }
 }

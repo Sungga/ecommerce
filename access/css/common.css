@@ -504,6 +504,10 @@
     display: block;
 }
 
+.icon_menu span {
+    display: none;
+}
+
 .cart__list {
     display: none;
     list-style: none;
