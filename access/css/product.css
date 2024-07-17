@@ -342,20 +342,19 @@
 }
 
 .deal {
-    margin: 16px 0;
-    padding: 16px 0;
+    padding: 36px 0;
     border-top: 1px solid var(--color-primary);
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
 
-.deal h1 {
+.title-part {
     width: 100%;
     text-align: left;
-    margin-bottom: 36px;
     font-size: 2rem;
     font-weight: 400;
+    margin: 0 0 36px;
 }
 
 .deal__list {
@@ -377,8 +376,8 @@
 .deal__img {
     width: 100%;
     height: 180px;
-    border: 1px solid var(--color-primary);
     margin-bottom: 8px;
+    box-shadow: 0 0 4px -2px var(--color-black);
 }
 
 .deal__item img {
@@ -523,5 +522,31 @@
     width: 50%;
     line-height: 40px;
     text-align: center;
+    font-size: 1.4rem;
+}
+
+.product__detail {
+    padding: 36px 0;
+    border-top: 1px solid var(--color-primary);
+}
+
+.product__detail--item {
+    box-sizing: border-box;
+    margin-bottom: 8px;
+
+    display: flex;
+    align-items: flex-start;
+}
+
+.product__detail--item label {
+    font-size: 1.4rem;
+    line-height: 2rem;
+    display: inline-block;
+    width: 180px;
+    padding-right: 16px;
+    color: var(--color-pale);
+}
+
+.product__detail--item div {
     font-size: 1.4rem;
 }
