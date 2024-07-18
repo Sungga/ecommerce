@@ -1,0 +1,41 @@
+/* Mobile */
+@media only screen and (max-width:739px) {
+    .product__about {
+        flex-wrap: wrap;
+    }
+
+    .product__left {
+        width: 100%;
+    }
+
+    .smallImg__container {
+        margin-top: 8px;
+    }
+
+    .product__right {
+        width: 100%;
+        padding: 16px 16px;
+    }
+
+    .product__right .product__item {
+        justify-content: flex-start;
+    }
+
+    .product__right .product__item.product__action {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .product__action input {
+        margin: 0;
+    }
+
+    .deal__list {
+        width: 100%;
+    }
+
+    .deal__buy {
+        border: none;
+    }
+
+}

@@ -14,6 +14,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
 
     <!-- font google for logo -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -22,6 +24,7 @@
 
     <!-- font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    
 
     <!-- reset css -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
@@ -30,6 +33,10 @@
     <link rel="stylesheet" href="access/css/base.css">
     <link rel="stylesheet" href="access/css/common.css">
     <link rel="stylesheet" href="access/css/product.css">
+
+    <!-- responsive -->
+    <link rel="stylesheet" href="access/responsive/product.css">
+    <link rel="stylesheet" href="access/responsive/common.css">
 </head>
 <body>
     <!-- <div class="cursor"></div> -->
@@ -89,15 +96,17 @@
                             </ul>
                         </div>
                             <a href="#">Hỗ trợ</a>
-                        <div class="header__user menu" style="display: inline-block; position: relative;">
+                        <!-- <div class="header__user menu" style="display: inline-block; position: relative;">
                             <a href="#"><img class="header__user--avt" src="./access/img/user.png" alt=""> Trương Anh Vũ</a>
-                            <!-- <a href="#">Đăng nhập</a>
-                            <a href="#">Đăng ký</a> -->
                             <ul class="header__user--func">
                                 <li><a href="#">Quản lý</a></li>
                                 <li><a href="#">Tài khoản</a></li>
                                 <li><a href="#">Đăng xuất</a></li>
                             </ul>
+                        </div> --> 
+                        <div class="menu" style="display: inline-block;">
+                            <a href="#">Đăng nhập</a>
+                            <a href="#">Đăng ký</a>
                         </div>
                     </div>
                 </div>
@@ -323,20 +332,24 @@ menu
                             </ul>
                         </div>
                             <a href="#">Hỗ trợ</a>
-                        <div class="header__user menu" style="display: inline-block; position: relative;">
+                        <!-- <div class="header__user menu" style="display: inline-block; position: relative;">
                             <a href="#"><img class="header__user--avt" src="./access/img/user.png" alt=""> Trương Anh Vũ</a>
-                            <!-- <a href="#">Đăng nhập</a>
-                            <a href="#">Đăng ký</a> -->
                             <ul class="header__user--func">
                                 <li><a href="#">Quản lý</a></li>
                                 <li><a href="#">Tài khoản</a></li>
                                 <li><a href="#">Đăng xuất</a></li>
                             </ul>
+                        </div> -->
+                        <div class="menu" style="display: contents;">
+                            <a href="#">Đăng nhập</a>
+                            <a href="#">Đăng ký</a>
                         </div>
                     </div>
                 </div>
                 <div class="header__header-bottom">
+
                     <div class="header__header-bottom--left"></div>
+                    
                     <div class="header__header-bottom--right">
                         <div class="header__mess">
                             <!-- when user have message, element <i> will have class named "have__mess" -->
@@ -480,6 +493,7 @@ menu
                             </ul>
                         </div>
                     </div>
+                    
                 </div>
                 <div class="icon_exit">
                     <span class="material-symbols-outlined">
