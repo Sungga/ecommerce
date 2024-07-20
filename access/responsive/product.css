@@ -34,8 +34,208 @@
         width: 100%;
     }
 
+    .deal__list>p {
+        display: none;
+    }
+
     .deal__buy {
         border: none;
+    }
+
+    .shop__name button {
+        margin-bottom: 8px;
+    }
+
+    .title-part {
+        width: 90%;
+        margin-left: 24px;
+        text-align: center;
+    }
+
+    .deal__item {
+        margin: 0px 8px 0px 8px ;
+    }
+
+    .deal__buy {
+        width: calc(100% - 8px);
+    }
+
+    .shop__desc p {
+        width: 100%;
+    }
+
+    .product__detail--item label {
+        margin-left: 88px;
+    }
+
+    .product__desc p {
+        margin: 0px 8px 12px 8px;
+    }
+
+    .product__rating--left {
+        width: 180px;
+        margin: 64px 0px 0px 24px;
+    }
+
+    .product__comment--main p {
+        margin: 0px 16px 8px 0px;
+    }
+
+    .product__review--navigation a {
+        margin-bottom: 8px;
+    }
+
+    .product__list {
+        padding: 16px 0;
+    }
+    
+    .product__list--title {
+        padding: 16px 0;
+        text-align: center;
+        font-size: 2rem;
+    }
+    
+    .product__list--list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    
+    .product__list--item {
+        width: calc(100% / 3 - 8px);
+        padding: 8px 0 8px 0;
+        margin: 4px 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        border: 1px solid var(--color-border);
+        transition: all 0.3s ease-in-out;
+    }
+    
+    .product__list--item:not(.category__item) {
+        width: calc(100% / 2 - 8px);
+        height: 31.7rem;
+    }
+    
+    .product__list--item:not(.category__item) {
+        background-color: var(--color-white);
+        margin: 3px;
+    }
+    
+    .product__list--item:not(.category__item):hover {
+        border: 1px solid #000;
+        box-shadow: 0px 0px 2px 2px #ccc;
+    }
+    
+    .product__list--item a {
+        width: 90%;
+        height: 250px;
+        border: 1px solid var(--color-border);
+        display: block;
+        overflow: hidden;
+        transition: all 0.3s ease-in-out;
+    }
+    
+    .product__list--item:not(.category__item):hover a {
+        border: 1px solid #000;
+        box-shadow: 0px 0px 2px 2px #ccc;
+    }
+    
+    .product__list--item img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: all 0.3s ease-in-out;
+    }
+    
+    .product__list--item:not(.category__item):hover img {
+        transform: scale(1.01);
+    }
+    
+    .product__list--item p {
+        font-size: 1.4rem;
+        margin-top: 8px;
+    
+        /* gioi han 1 dong` */
+        line-height: 2rem;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 1;
+    }
+    
+    .product__list--item > div {
+        margin: 8px 0 0;
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .product__list--quantity,
+    .product__list--rate {
+        text-align: right !important;
+    }
+    
+    .product__list--item:not(.category__item) span {
+        font-size: 1.2rem;
+        font-style: italic;
+    }
+    
+    .product__list--item:not(.category__item) p{
+        width: 90%;
+        text-align: left;
+        padding: 2px 0;
+        font-size: 1.5rem;
+    }
+    
+    .product__list--item:not(.category__item) span {
+        width: 90%;
+        text-align: left;
+        padding: 2px 0;
+        font-size: 1.3rem;
+    }
+    
+    .product__list--seeMore {
+        text-align: center;
+        padding: 24px 0 16px;
+    }
+    
+    .product__list--seeMore a {
+        font-size: 1.5rem;
+        text-decoration: none;
+        color: var(--color-black);
+        background-color: var(--color-white);
+        border: 1px solid var(--color-border);
+        border-radius: 4px;
+        padding: 12px 16px;
+        transition: all .3s ease-in-out;
+    }
+    
+    .product__list--seeMore a:hover {
+        color: var(--color-white);
+        background-color: var(--color-black);
+        border: 1px solid #000;
+    }
+    
+    .category__item {
+        padding: 8px 0;
+        border: none;
+    }
+    
+    .category__item a {
+        width: 40%;
+        height: 74%;
+        border-radius: 50%;
+        /* border: 1px solid #000; */
+        border: 1px solid var(--color-border);
+        display: block;
+        overflow: hidden;
+    }
+    
+    .category__item a:hover {
+        border: 1px solid #000;
+        box-shadow: 1px 1px 1px 1px #ccc;
     }
 
 }
