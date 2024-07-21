@@ -29,11 +29,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
 
     <!-- css -->
-    <link rel="stylesheet" href="access/css/base.css">
     <link rel="stylesheet" href="access/css/common.css">
-    <link rel="stylesheet" href="access/css/home.css">
-    <link rel="stylesheet" href="access/responsive/home.css">
+    <link rel="stylesheet" href="access/css/cart.css">
     <link rel="stylesheet" href="access/responsive/common.css">
+    <link rel="stylesheet" href="access/css/base.css">
 </head>
 <body>
     <!-- <div class="cursor"></div> -->
@@ -510,7 +509,54 @@ menu
 
     <!-- BEGIN CART -->
     <div id="cart">
-        
+        <div class="grid">
+            <table>
+                <tr>
+                    <th class="cart__header--select"><input type="checkbox" name="" id=""></th>
+                    <th class="cart__header--product">Sản phẩm</th>
+                    <th>Phân loại</th>
+                    <th>Đơn giá</th>
+                    <th>Số lượng</th>
+                    <th>Số tiền</th>
+                    <th>Thao tác</th>
+                </tr>
+                <tr>
+                    <td class="cart__shop--name" colspan="7">Shop: TEECON</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="" id=""></td>
+                    <td class="cart__product--product">
+                        <div>
+                            <div class="cart__product--img">
+                                <img src="./access/img/productAoThun1.jpg" alt="">
+                            </div>
+                            <p>Voarch Nam Nữ Theo Dõi Voarch Nam Nữ Theo Dõi Voarch Nam Nữ Theo Dõi Voarch Nam Nữ Theo Dõi Thể Dục Chống Thấm Nước Bluetooth Sport Y68 Huyết Áp Nhịp Tim Thể Thao Đồng Hồ Thông Minh</p>
+                        </div>
+                    </td>
+                    <td class="cart__product--detail">
+                        <p>
+                            Đen, M, Xuông, Xanh xám
+                        </p>
+                        <i class="fa-solid fa-sort-down"></i>
+                    </td>
+                    <td class="cart__product--price">
+                        <span>80000</span>
+                        <span>60000</span>
+                    </td>
+                    <td class="cart__product--quantity">
+                        <div>
+                            <div>
+                                <label class="btnSub">-</label>
+                                <input type="number" name="" id="" min="1" value="1">
+                                <label class="btnAdd">+</label>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="cart__product--total">60000</td>
+                    <td class="cart__product--delete">Xóa</td>
+                </tr>
+            </table>
+        </div>
     </div>
     <!-- END CART -->
 
@@ -595,8 +641,9 @@ menu
     <!-- END FOOTER -->
 
     <!-- js -->
-    <script src="./access/js/js_home.js"></script>
+    <!-- <script src="./access/js/js_home.js"></script> -->
     <script src="./access/js/js_common.js"></script>
+    <script src="./access/js/js_cart.js"></script>
 
     <!-- js change cursor -->
     <script src="./access/js/js_cursor.js"></script>
