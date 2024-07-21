@@ -127,3 +127,48 @@ inputCheckSelected.forEach(function(item) {
     });
 });
 
+
+// --------------------------<< js for show big img in comment >>------------------------------
+// Lấy tất cả các ảnh và video trong product__comment--smallImg
+const mediaElements = document.querySelectorAll('.product__comment--smallImg img, .product__comment--smallImg video');
+
+// Thêm sự kiện click cho từng ảnh và video
+mediaElements.forEach(element => {
+    element.addEventListener('click', function () {
+        // Lấy phần tử cha của ảnh/video (product__comment--item)
+        const commentItem = this.closest('.product__comment--item');
+        
+        // Lấy div product__comment--bigImg
+        const bigImgDiv = commentItem.querySelector('.product__comment--bigImg');
+
+        // Nếu thẻ được click có class select, xóa nội dung và class select
+        if (this.classList.contains('select')) {
+            bigImgDiv.innerHTML = '';
+            this.classList.remove('select');
+        } else {
+            // Xóa nội dung hiện tại của bigImgDiv
+            bigImgDiv.innerHTML = '';
+
+            // Copy thẻ img hoặc video vào bigImgDiv
+            const clonedElement = this.cloneNode(true);
+
+            // Nếu phần tử là video, thêm thuộc tính controls
+            if (clonedElement.tagName.toLowerCase() === 'video') {
+                clonedElement.setAttribute('controls', 'controls');
+            }
+
+            bigImgDiv.appendChild(clonedElement);
+
+            // Lấy tất cả các thẻ img và video trong product__comment--smallImg hiện tại
+            const siblingMediaElements = commentItem.querySelectorAll('.product__comment--smallImg img, .product__comment--smallImg video');
+
+            // Loại bỏ class select khỏi tất cả các thẻ img và video trong cùng product__comment--smallImg
+            siblingMediaElements.forEach(sibling => {
+                sibling.classList.remove('select');
+            });
+
+            // Thêm class select cho thẻ được click
+            this.classList.add('select');
+        }
+    });
+});

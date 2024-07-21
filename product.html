@@ -14,6 +14,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
 
     <!-- font google for logo -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -22,6 +24,7 @@
 
     <!-- font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    
 
     <!-- reset css -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
@@ -30,6 +33,10 @@
     <link rel="stylesheet" href="access/css/base.css">
     <link rel="stylesheet" href="access/css/common.css">
     <link rel="stylesheet" href="access/css/product.css">
+
+    <!-- responsive -->
+    <link rel="stylesheet" href="access/responsive/product.css">
+    <link rel="stylesheet" href="access/responsive/common.css">
 </head>
 <body>
     <!-- <div class="cursor"></div> -->
@@ -89,15 +96,17 @@
                             </ul>
                         </div>
                             <a href="#">Hỗ trợ</a>
-                        <div class="header__user menu" style="display: inline-block; position: relative;">
+                        <!-- <div class="header__user menu" style="display: inline-block; position: relative;">
                             <a href="#"><img class="header__user--avt" src="./access/img/user.png" alt=""> Trương Anh Vũ</a>
-                            <!-- <a href="#">Đăng nhập</a>
-                            <a href="#">Đăng ký</a> -->
                             <ul class="header__user--func">
                                 <li><a href="#">Quản lý</a></li>
                                 <li><a href="#">Tài khoản</a></li>
                                 <li><a href="#">Đăng xuất</a></li>
                             </ul>
+                        </div> --> 
+                        <div class="menu" style="display: inline-block;">
+                            <a href="#">Đăng nhập</a>
+                            <a href="#">Đăng ký</a>
                         </div>
                     </div>
                 </div>
@@ -272,7 +281,6 @@ menu
         </div>
     </div>
     <div class="menu__box">
-        
         <div class="header-container">
             <div class="grid">
                 <div class="header__header-top">
@@ -324,20 +332,24 @@ menu
                             </ul>
                         </div>
                             <a href="#">Hỗ trợ</a>
-                        <div class="header__user menu" style="display: inline-block; position: relative;">
+                        <!-- <div class="header__user menu" style="display: inline-block; position: relative;">
                             <a href="#"><img class="header__user--avt" src="./access/img/user.png" alt=""> Trương Anh Vũ</a>
-                            <!-- <a href="#">Đăng nhập</a>
-                            <a href="#">Đăng ký</a> -->
                             <ul class="header__user--func">
                                 <li><a href="#">Quản lý</a></li>
                                 <li><a href="#">Tài khoản</a></li>
                                 <li><a href="#">Đăng xuất</a></li>
                             </ul>
+                        </div> -->
+                        <div class="menu" style="display: contents;">
+                            <a href="#">Đăng nhập</a>
+                            <a href="#">Đăng ký</a>
                         </div>
                     </div>
                 </div>
                 <div class="header__header-bottom">
+
                     <div class="header__header-bottom--left"></div>
+                    
                     <div class="header__header-bottom--right">
                         <div class="header__mess">
                             <!-- when user have message, element <i> will have class named "have__mess" -->
@@ -481,6 +493,7 @@ menu
                             </ul>
                         </div>
                     </div>
+                    
                 </div>
                 <div class="icon_exit">
                     <span class="material-symbols-outlined">
@@ -762,7 +775,772 @@ menu
                     </div>
                 </div>
                 <div class="product__desc">
-                    
+                    <h1 class="title-part">MÔ TẢ SẢN PHẨM</h1>
+                    <div class="product__desc--container">
+                        <p>Xin kính chào quý khách,</p>
+                        <p>- Tăng thêm chiều cao 4cm.</p>
+                        <p>- Phối đồ mọi phong cách.</p>
+                        <p>- Đế khâu 2 lớp chuẩn hàng Trung.</p>
+                        <p>- Size: 36 > 45 dành cho cả nam và nữ.</p>
+                        <p>- Mã sản phẩm:</p>
+                        <p>- Xuất xứ: được sản xuất tại nhà máy Quảng Châu.</p>
+                        <p>Cam kết:</p>
+                        <p>☑️ CAM KẾT: HOÀN TIỀN 100% NẾU SẢN PHẨM KHÔNG ĐÚNG MÔ TẢ.</p>
+                        <p>☑️ HỖ TRỢ ĐỔI SIZE TRONG 3 NGÀY NẾU KHÔNG ĐI VỪA.</p>
+                        <p>☑️ ĐƯỢC KIỂM TRA HÀNG TRƯỚC KHI THANH TOÁN (GỌI CHO SHOP THEO HOTLINE NẾU BƯU TA K HỖ TRỢ CHO KIỂM TRA HÀNG).</p>
+                        <p>☑️ SẢN PHẨM TRƯỚC KHI GIAO CHO KHÁCH HÀNG ĐẦY ĐỦ BILL, BOX, TAG...</p>
+                    </div>
+                </div>
+                <div class="product__review">
+                    <h1 class="title-part">ĐÁNH GIÁ SẢN PHẨM</h1>
+                    <div class="product__review--container">
+                        <div class="product__review--rating">
+                            <div class="product__rating--left">
+                                <p><span>3.9</span>sao</p>
+                                <p>
+                                    <i class="fa-solid fa-star" style="color: var(--color-primary);"></i>
+                                    <i class="fa-solid fa-star" style="color: var(--color-primary);"></i>
+                                    <i class="fa-solid fa-star" style="color: var(--color-primary);"></i>
+                                    <i class="fa-solid fa-star" style="color: var(--color-primary);"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </p>
+                            </div>
+                            <div class="product__rating--right">
+                                <div class="select">Tất cả</div>
+                                <div>5 sao (152)</div>
+                                <div>4 sao (7)</div>
+                                <div>3 sao (0)</div>
+                                <div>2 sao (1)</div>
+                                <div>1 sao (1)</div>
+                                <div>Có bình luận (74)</div>
+                                <div>Có hình ảnh / video (40)</div>
+                            </div>
+                        </div>
+                        <div class="product__review--comment">
+                            <div class="product__comment--item">
+                                <div class="product__comment--avt">
+                                    <img src="./access/img/viettinbank.png" alt="">
+                                </div>
+                                <div class="product__comment--main">
+                                    <p>dophanh_07</p>
+                                    <p>
+                                        <i class="fa-solid fa-star" style="color: var(--color-primary);"></i>
+                                        <i class="fa-solid fa-star" style="color: var(--color-primary);"></i>
+                                        <i class="fa-solid fa-star" style="color: var(--color-primary);"></i>
+                                        <i class="fa-solid fa-star" style="color: var(--color-primary);"></i>
+                                    </p>
+                                    <p>
+                                        2024-07-10 | Phân loại hàng: Trắng, L
+                                    </p>
+                                    <p>
+                                        Giao hàng nhanh, giá thành rẻ nhg rất chất lượng. Hàng giao đến nơi k bị làm sau cả. Đầy đủ ba loại cam. Hàng rẻ nhg chất lượng, chụp xinh Giao hàng nhanh, giá thành rẻ nhg rất chất lượng. Hàng giao đến nơi k bị làm sau cả. Đầy đủ ba loại cam. Hàng rẻ nhg chất lượng, chụp xinh Giao hàng nhanh, giá thành rẻ nhg rất chất lượng. Hàng giao đến nơi k bị làm sau cả. Đầy đủ ba loại cam. Hàng rẻ nhg chất lượng, chụp xinh Giao hàng nhanh, giá thành rẻ nhg rất chất lượng. Hàng giao đến nơi k bị làm sau cả. Đầy đủ ba loại cam. Hàng rẻ nhg chất lượng, chụp xinh Giao hàng nhanh, giá thành rẻ nhg rất chất lượng. Hàng giao đến nơi k bị làm sau cả. Đầy đủ ba loại cam. Hàng rẻ nhg chất lượng, chụp xinh
+                                    </p>
+                                    <div class="product__comment--smallImg">
+                                        <video>
+                                            <source src="./access/video/noo.mp4" type="video/mp4">
+                                          </video>
+                                        <img src="./access/img/productAoThun1.jpg" alt="">
+                                        <img src="./access/img/productAoThun1.jpg" alt="">
+                                        <img src="./access/img/productAoThun1.jpg" alt="">
+                                        <img src="./access/img/productAoThun1.jpg" alt="">
+                                        <img src="./access/img/productAoThun1.jpg" alt="">
+                                    </div>
+                                    <div class="product__comment--bigImg">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product__comment--item">
+                                <div class="product__comment--avt">
+                                    <img src="./access/img/viettinbank.png" alt="">
+                                </div>
+                                <div class="product__comment--main">
+                                    <p>dophanh_07</p>
+                                    <p>
+                                        <i class="fa-solid fa-star" style="color: var(--color-primary);"></i>
+                                        <i class="fa-solid fa-star" style="color: var(--color-primary);"></i>
+                                        <i class="fa-solid fa-star" style="color: var(--color-primary);"></i>
+                                        <i class="fa-solid fa-star" style="color: var(--color-primary);"></i>
+                                    </p>
+                                    <p>
+                                        2024-07-10 | Phân loại hàng: Trắng, L
+                                    </p>
+                                    <p>
+                                        Giao hàng nhanh, giá thành rẻ nhg rất chất lượng. Hàng giao đến nơi k bị làm sau cả. Đầy đủ ba loại cam. Hàng rẻ nhg chất lượng, chụp xinh Giao hàng nhanh, giá thành rẻ nhg rất chất lượng. Hàng giao đến nơi k bị làm sau cả. Đầy đủ ba loại cam. Hàng rẻ nhg chất lượng, chụp xinh Giao hàng nhanh, giá thành rẻ nhg rất chất lượng. Hàng giao đến nơi k bị làm sau cả. Đầy đủ ba loại cam. Hàng rẻ nhg chất lượng, chụp xinh Giao hàng nhanh, giá thành rẻ nhg rất chất lượng. Hàng giao đến nơi k bị làm sau cả. Đầy đủ ba loại cam. Hàng rẻ nhg chất lượng, chụp xinh Giao hàng nhanh, giá thành rẻ nhg rất chất lượng. Hàng giao đến nơi k bị làm sau cả. Đầy đủ ba loại cam. Hàng rẻ nhg chất lượng, chụp xinh
+                                    </p>
+                                    <div class="product__comment--smallImg">
+                                        <video>
+                                            <source src="./access/video/noo.mp4" type="video/mp4">
+                                          </video>
+                                        <img src="./access/img/productAoThun1.jpg" alt="">
+                                        <img src="./access/img/productAoThun1.jpg" alt="">
+                                        <img src="./access/img/productAoThun1.jpg" alt="">
+                                        <img src="./access/img/productAoThun1.jpg" alt="">
+                                        <img src="./access/img/productAoThun1.jpg" alt="">
+                                    </div>
+                                    <div class="product__comment--bigImg">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product__comment--item">
+                                <div class="product__comment--avt">
+                                    <img src="./access/img/viettinbank.png" alt="">
+                                </div>
+                                <div class="product__comment--main">
+                                    <p>dophanh_07</p>
+                                    <p>
+                                        <i class="fa-solid fa-star" style="color: var(--color-primary);"></i>
+                                        <i class="fa-solid fa-star" style="color: var(--color-primary);"></i>
+                                        <i class="fa-solid fa-star" style="color: var(--color-primary);"></i>
+                                        <i class="fa-solid fa-star" style="color: var(--color-primary);"></i>
+                                    </p>
+                                    <p>
+                                        2024-07-10 | Phân loại hàng: Trắng, L
+                                    </p>
+                                    <p>
+                                        Giao hàng nhanh, giá thành rẻ nhg rất chất lượng. Hàng giao đến nơi k bị làm sau cả. Đầy đủ ba loại cam. Hàng rẻ nhg chất lượng, chụp xinh Giao hàng nhanh, giá thành rẻ nhg rất chất lượng. Hàng giao đến nơi k bị làm sau cả. Đầy đủ ba loại cam. Hàng rẻ nhg chất lượng, chụp xinh Giao hàng nhanh, giá thành rẻ nhg rất chất lượng. Hàng giao đến nơi k bị làm sau cả. Đầy đủ ba loại cam. Hàng rẻ nhg chất lượng, chụp xinh Giao hàng nhanh, giá thành rẻ nhg rất chất lượng. Hàng giao đến nơi k bị làm sau cả. Đầy đủ ba loại cam. Hàng rẻ nhg chất lượng, chụp xinh Giao hàng nhanh, giá thành rẻ nhg rất chất lượng. Hàng giao đến nơi k bị làm sau cả. Đầy đủ ba loại cam. Hàng rẻ nhg chất lượng, chụp xinh
+                                    </p>
+                                    <div class="product__comment--smallImg">
+                                        <video>
+                                            <source src="./access/video/noo.mp4" type="video/mp4">
+                                          </video>
+                                        <img src="./access/img/productAoThun1.jpg" alt="">
+                                        <img src="./access/img/productAoThun1.jpg" alt="">
+                                        <img src="./access/img/productAoThun1.jpg" alt="">
+                                        <img src="./access/img/productAoThun1.jpg" alt="">
+                                        <img src="./access/img/productAoThun1.jpg" alt="">
+                                    </div>
+                                    <div class="product__comment--bigImg">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product__comment--item">
+                                <div class="product__comment--avt">
+                                    <img src="./access/img/viettinbank.png" alt="">
+                                </div>
+                                <div class="product__comment--main">
+                                    <p>dophanh_07</p>
+                                    <p>
+                                        <i class="fa-solid fa-star" style="color: var(--color-primary);"></i>
+                                        <i class="fa-solid fa-star" style="color: var(--color-primary);"></i>
+                                        <i class="fa-solid fa-star" style="color: var(--color-primary);"></i>
+                                        <i class="fa-solid fa-star" style="color: var(--color-primary);"></i>
+                                    </p>
+                                    <p>
+                                        2024-07-10 | Phân loại hàng: Trắng, L
+                                    </p>
+                                    <p>
+                                        Giao hàng nhanh, giá thành rẻ nhg rất chất lượng. Hàng giao đến nơi k bị làm sau cả. Đầy đủ ba loại cam. Hàng rẻ nhg chất lượng, chụp xinh Giao hàng nhanh, giá thành rẻ nhg rất chất lượng. Hàng giao đến nơi k bị làm sau cả. Đầy đủ ba loại cam. Hàng rẻ nhg chất lượng, chụp xinh Giao hàng nhanh, giá thành rẻ nhg rất chất lượng. Hàng giao đến nơi k bị làm sau cả. Đầy đủ ba loại cam. Hàng rẻ nhg chất lượng, chụp xinh Giao hàng nhanh, giá thành rẻ nhg rất chất lượng. Hàng giao đến nơi k bị làm sau cả. Đầy đủ ba loại cam. Hàng rẻ nhg chất lượng, chụp xinh Giao hàng nhanh, giá thành rẻ nhg rất chất lượng. Hàng giao đến nơi k bị làm sau cả. Đầy đủ ba loại cam. Hàng rẻ nhg chất lượng, chụp xinh
+                                    </p>
+                                    <div class="product__comment--smallImg">
+                                        <video>
+                                            <source src="./access/video/noo.mp4" type="video/mp4">
+                                          </video>
+                                        <img src="./access/img/productAoThun1.jpg" alt="">
+                                        <img src="./access/img/productAoThun1.jpg" alt="">
+                                        <img src="./access/img/productAoThun1.jpg" alt="">
+                                        <img src="./access/img/productAoThun1.jpg" alt="">
+                                        <img src="./access/img/productAoThun1.jpg" alt="">
+                                    </div>
+                                    <div class="product__comment--bigImg">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product__comment--item">
+                                <div class="product__comment--avt">
+                                    <img src="./access/img/viettinbank.png" alt="">
+                                </div>
+                                <div class="product__comment--main">
+                                    <p>dophanh_07</p>
+                                    <p>
+                                        <i class="fa-solid fa-star" style="color: var(--color-primary);"></i>
+                                        <i class="fa-solid fa-star" style="color: var(--color-primary);"></i>
+                                        <i class="fa-solid fa-star" style="color: var(--color-primary);"></i>
+                                        <i class="fa-solid fa-star" style="color: var(--color-primary);"></i>
+                                    </p>
+                                    <p>
+                                        2024-07-10 | Phân loại hàng: Trắng, L
+                                    </p>
+                                    <p>
+                                        Giao hàng nhanh, giá thành rẻ nhg rất chất lượng. Hàng giao đến nơi k bị làm sau cả. Đầy đủ ba loại cam. Hàng rẻ nhg chất lượng, chụp xinh Giao hàng nhanh, giá thành rẻ nhg rất chất lượng. Hàng giao đến nơi k bị làm sau cả. Đầy đủ ba loại cam. Hàng rẻ nhg chất lượng, chụp xinh Giao hàng nhanh, giá thành rẻ nhg rất chất lượng. Hàng giao đến nơi k bị làm sau cả. Đầy đủ ba loại cam. Hàng rẻ nhg chất lượng, chụp xinh Giao hàng nhanh, giá thành rẻ nhg rất chất lượng. Hàng giao đến nơi k bị làm sau cả. Đầy đủ ba loại cam. Hàng rẻ nhg chất lượng, chụp xinh Giao hàng nhanh, giá thành rẻ nhg rất chất lượng. Hàng giao đến nơi k bị làm sau cả. Đầy đủ ba loại cam. Hàng rẻ nhg chất lượng, chụp xinh
+                                    </p>
+                                    <div class="product__comment--smallImg">
+                                        <video>
+                                            <source src="./access/video/noo.mp4" type="video/mp4">
+                                          </video>
+                                        <img src="./access/img/productAoThun1.jpg" alt="">
+                                        <img src="./access/img/productAoThun1.jpg" alt="">
+                                        <img src="./access/img/productAoThun1.jpg" alt="">
+                                        <img src="./access/img/productAoThun1.jpg" alt="">
+                                        <img src="./access/img/productAoThun1.jpg" alt="">
+                                    </div>
+                                    <div class="product__comment--bigImg">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product__review--navigation">
+                                <a href="#">&#60;</a>
+                                <a href="#" class="focus">1</a>
+                                <a href="#">2</a>
+                                <a href="#">3</a>
+                                <a href="#">4</a>
+                                <a href="#">...</a>
+                                <a href="#">12</a>
+                                <a href="#">&#62;</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product__list">
+                    <h1 class="product__list--title">SẢN PHẨM CỦA SHOP</h1>
+                    <div class="product__list--list">
+                        <div class="product__list--item">
+                            <a href="#"><img src="./access/img/imgCategory.jpg" alt=""></a>
+                            <p>Mỹ phẩm nhà TEECON Mỹ phẩm nhà TEECON Mỹ phẩm nhà TEECONMỹ phẩm nhà TEECON</p>
+                            <div>
+                                <span class="product__list--price">12.000.000 đ</span>
+                                <span class="product__list--quantity">Đã bán 200</span>
+                            </div>
+                            <div>
+                                <span><i class="product__list--location fa-solid fa-location-dot" style="color: #000000;"></i> Hà Nội</span>
+                                <span class="product__list--rate">
+                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="product__list--item">
+                            <a href="#"><img src="./access/img/imgCategory.jpg" alt=""></a>
+                            <p>Mỹ phẩm nhà TEECON</p>
+                            <div>
+                                <span class="product__list--price">12.000.000 đ</span>
+                                <span class="product__list--quantity">Đã bán 200</span>
+                            </div>
+                            <div>
+                                <span><i class="product__list--location fa-solid fa-location-dot" style="color: #000000;"></i> Hà Nội</span>
+                                <span class="product__list--rate">
+                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="product__list--item">
+                            <a href="#"><img src="./access/img/imgCategory.jpg" alt=""></a>
+                            <p>Mỹ phẩm nhà TEECON</p>
+                            <div>
+                                <span class="product__list--price">12.000.000 đ</span>
+                                <span class="product__list--quantity">Đã bán 200</span>
+                            </div>
+                            <div>
+                                <span><i class="product__list--location fa-solid fa-location-dot" style="color: #000000;"></i> Hà Nội</span>
+                                <span class="product__list--rate">
+                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="product__list--item">
+                            <a href="#"><img src="./access/img/imgCategory.jpg" alt=""></a>
+                            <p>Mỹ phẩm nhà TEECON</p>
+                            <div>
+                                <span class="product__list--price">12.000.000 đ</span>
+                                <span class="product__list--quantity">Đã bán 200</span>
+                            </div>
+                            <div>
+                                <span><i class="product__list--location fa-solid fa-location-dot" style="color: #000000;"></i> Hà Nội</span>
+                                <span class="product__list--rate">
+                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="product__list--item">
+                            <a href="#"><img src="./access/img/imgCategory.jpg" alt=""></a>
+                            <p>Mỹ phẩm nhà TEECON</p>
+                            <div>
+                                <span class="product__list--price">12.000.000 đ</span>
+                                <span class="product__list--quantity">Đã bán 200</span>
+                            </div>
+                            <div>
+                                <span><i class="product__list--location fa-solid fa-location-dot" style="color: #000000;"></i> Hà Nội</span>
+                                <span class="product__list--rate">
+                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="product__list--item">
+                            <a href="#"><img src="./access/img/imgCategory.jpg" alt=""></a>
+                            <p>Mỹ phẩm nhà TEECON</p>
+                            <div>
+                                <span class="product__list--price">12.000.000 đ</span>
+                                <span class="product__list--quantity">Đã bán 200</span>
+                            </div>
+                            <div>
+                                <span><i class="product__list--location fa-solid fa-location-dot" style="color: #000000;"></i> Hà Nội</span>
+                                <span class="product__list--rate">
+                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="product__list--item">
+                            <a href="#"><img src="./access/img/imgCategory.jpg" alt=""></a>
+                            <p>Mỹ phẩm nhà TEECON</p>
+                            <div>
+                                <span class="product__list--price">12.000.000 đ</span>
+                                <span class="product__list--quantity">Đã bán 200</span>
+                            </div>
+                            <div>
+                                <span><i class="product__list--location fa-solid fa-location-dot" style="color: #000000;"></i> Hà Nội</span>
+                                <span class="product__list--rate">
+                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="product__list--item">
+                            <a href="#"><img src="./access/img/imgCategory.jpg" alt=""></a>
+                            <p>Mỹ phẩm nhà TEECON</p>
+                            <div>
+                                <span class="product__list--price">12.000.000 đ</span>
+                                <span class="product__list--quantity">Đã bán 200</span>
+                            </div>
+                            <div>
+                                <span><i class="product__list--location fa-solid fa-location-dot" style="color: #000000;"></i> Hà Nội</span>
+                                <span class="product__list--rate">
+                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="product__list--item">
+                            <a href="#"><img src="./access/img/imgCategory.jpg" alt=""></a>
+                            <p>Mỹ phẩm nhà TEECON</p>
+                            <div>
+                                <span class="product__list--price">12.000.000 đ</span>
+                                <span class="product__list--quantity">Đã bán 200</span>
+                            </div>
+                            <div>
+                                <span><i class="product__list--location fa-solid fa-location-dot" style="color: #000000;"></i> Hà Nội</span>
+                                <span class="product__list--rate">
+                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="product__list--item">
+                            <a href="#"><img src="./access/img/imgCategory.jpg" alt=""></a>
+                            <p>Mỹ phẩm nhà TEECON</p>
+                            <div>
+                                <span class="product__list--price">12.000.000 đ</span>
+                                <span class="product__list--quantity">Đã bán 200</span>
+                            </div>
+                            <div>
+                                <span><i class="product__list--location fa-solid fa-location-dot" style="color: #000000;"></i> Hà Nội</span>
+                                <span class="product__list--rate">
+                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="product__list--item">
+                            <a href="#"><img src="./access/img/imgCategory.jpg" alt=""></a>
+                            <p>Mỹ phẩm nhà TEECON</p>
+                            <div>
+                                <span class="product__list--price">12.000.000 đ</span>
+                                <span class="product__list--quantity">Đã bán 200</span>
+                            </div>
+                            <div>
+                                <span><i class="product__list--location fa-solid fa-location-dot" style="color: #000000;"></i> Hà Nội</span>
+                                <span class="product__list--rate">
+                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="product__list--item">
+                            <a href="#"><img src="./access/img/imgCategory.jpg" alt=""></a>
+                            <p>Mỹ phẩm nhà TEECON</p>
+                            <div>
+                                <span class="product__list--price">12.000.000 đ</span>
+                                <span class="product__list--quantity">Đã bán 200</span>
+                            </div>
+                            <div>
+                                <span><i class="product__list--location fa-solid fa-location-dot" style="color: #000000;"></i> Hà Nội</span>
+                                <span class="product__list--rate">
+                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="product__list--item">
+                            <a href="#"><img src="./access/img/imgCategory.jpg" alt=""></a>
+                            <p>Mỹ phẩm nhà TEECON</p>
+                            <div>
+                                <span class="product__list--price">12.000.000 đ</span>
+                                <span class="product__list--quantity">Đã bán 200</span>
+                            </div>
+                            <div>
+                                <span><i class="product__list--location fa-solid fa-location-dot" style="color: #000000;"></i> Hà Nội</span>
+                                <span class="product__list--rate">
+                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="product__list--item">
+                            <a href="#"><img src="./access/img/imgCategory.jpg" alt=""></a>
+                            <p>Mỹ phẩm nhà TEECON</p>
+                            <div>
+                                <span class="product__list--price">12.000.000 đ</span>
+                                <span class="product__list--quantity">Đã bán 200</span>
+                            </div>
+                            <div>
+                                <span><i class="product__list--location fa-solid fa-location-dot" style="color: #000000;"></i> Hà Nội</span>
+                                <span class="product__list--rate">
+                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="product__list--item">
+                            <a href="#"><img src="./access/img/imgCategory.jpg" alt=""></a>
+                            <p>Mỹ phẩm nhà TEECON</p>
+                            <div>
+                                <span class="product__list--price">12.000.000 đ</span>
+                                <span class="product__list--quantity">Đã bán 200</span>
+                            </div>
+                            <div>
+                                <span><i class="product__list--location fa-solid fa-location-dot" style="color: #000000;"></i> Hà Nội</span>
+                                <span class="product__list--rate">
+                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="product__list--seeMore"><a href="#">&#60;&#60; Xem thêm &#62;&#62;</a></p>
+                </div>
+                <div class="product__list">
+                    <h1 class="product__list--title">SẢN PHẨM LIÊN QUAN</h1>
+                    <div class="product__list--list">
+                        <div class="product__list--item">
+                            <a href="#"><img src="./access/img/imgCategory.jpg" alt=""></a>
+                            <p>Mỹ phẩm nhà TEECON Mỹ phẩm nhà TEECON Mỹ phẩm nhà TEECONMỹ phẩm nhà TEECON</p>
+                            <div>
+                                <span class="product__list--price">12.000.000 đ</span>
+                                <span class="product__list--quantity">Đã bán 200</span>
+                            </div>
+                            <div>
+                                <span><i class="product__list--location fa-solid fa-location-dot" style="color: #000000;"></i> Hà Nội</span>
+                                <span class="product__list--rate">
+                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="product__list--item">
+                            <a href="#"><img src="./access/img/imgCategory.jpg" alt=""></a>
+                            <p>Mỹ phẩm nhà TEECON</p>
+                            <div>
+                                <span class="product__list--price">12.000.000 đ</span>
+                                <span class="product__list--quantity">Đã bán 200</span>
+                            </div>
+                            <div>
+                                <span><i class="product__list--location fa-solid fa-location-dot" style="color: #000000;"></i> Hà Nội</span>
+                                <span class="product__list--rate">
+                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="product__list--item">
+                            <a href="#"><img src="./access/img/imgCategory.jpg" alt=""></a>
+                            <p>Mỹ phẩm nhà TEECON</p>
+                            <div>
+                                <span class="product__list--price">12.000.000 đ</span>
+                                <span class="product__list--quantity">Đã bán 200</span>
+                            </div>
+                            <div>
+                                <span><i class="product__list--location fa-solid fa-location-dot" style="color: #000000;"></i> Hà Nội</span>
+                                <span class="product__list--rate">
+                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="product__list--item">
+                            <a href="#"><img src="./access/img/imgCategory.jpg" alt=""></a>
+                            <p>Mỹ phẩm nhà TEECON</p>
+                            <div>
+                                <span class="product__list--price">12.000.000 đ</span>
+                                <span class="product__list--quantity">Đã bán 200</span>
+                            </div>
+                            <div>
+                                <span><i class="product__list--location fa-solid fa-location-dot" style="color: #000000;"></i> Hà Nội</span>
+                                <span class="product__list--rate">
+                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="product__list--item">
+                            <a href="#"><img src="./access/img/imgCategory.jpg" alt=""></a>
+                            <p>Mỹ phẩm nhà TEECON</p>
+                            <div>
+                                <span class="product__list--price">12.000.000 đ</span>
+                                <span class="product__list--quantity">Đã bán 200</span>
+                            </div>
+                            <div>
+                                <span><i class="product__list--location fa-solid fa-location-dot" style="color: #000000;"></i> Hà Nội</span>
+                                <span class="product__list--rate">
+                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="product__list--item">
+                            <a href="#"><img src="./access/img/imgCategory.jpg" alt=""></a>
+                            <p>Mỹ phẩm nhà TEECON</p>
+                            <div>
+                                <span class="product__list--price">12.000.000 đ</span>
+                                <span class="product__list--quantity">Đã bán 200</span>
+                            </div>
+                            <div>
+                                <span><i class="product__list--location fa-solid fa-location-dot" style="color: #000000;"></i> Hà Nội</span>
+                                <span class="product__list--rate">
+                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="product__list--item">
+                            <a href="#"><img src="./access/img/imgCategory.jpg" alt=""></a>
+                            <p>Mỹ phẩm nhà TEECON</p>
+                            <div>
+                                <span class="product__list--price">12.000.000 đ</span>
+                                <span class="product__list--quantity">Đã bán 200</span>
+                            </div>
+                            <div>
+                                <span><i class="product__list--location fa-solid fa-location-dot" style="color: #000000;"></i> Hà Nội</span>
+                                <span class="product__list--rate">
+                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="product__list--item">
+                            <a href="#"><img src="./access/img/imgCategory.jpg" alt=""></a>
+                            <p>Mỹ phẩm nhà TEECON</p>
+                            <div>
+                                <span class="product__list--price">12.000.000 đ</span>
+                                <span class="product__list--quantity">Đã bán 200</span>
+                            </div>
+                            <div>
+                                <span><i class="product__list--location fa-solid fa-location-dot" style="color: #000000;"></i> Hà Nội</span>
+                                <span class="product__list--rate">
+                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="product__list--item">
+                            <a href="#"><img src="./access/img/imgCategory.jpg" alt=""></a>
+                            <p>Mỹ phẩm nhà TEECON</p>
+                            <div>
+                                <span class="product__list--price">12.000.000 đ</span>
+                                <span class="product__list--quantity">Đã bán 200</span>
+                            </div>
+                            <div>
+                                <span><i class="product__list--location fa-solid fa-location-dot" style="color: #000000;"></i> Hà Nội</span>
+                                <span class="product__list--rate">
+                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="product__list--item">
+                            <a href="#"><img src="./access/img/imgCategory.jpg" alt=""></a>
+                            <p>Mỹ phẩm nhà TEECON</p>
+                            <div>
+                                <span class="product__list--price">12.000.000 đ</span>
+                                <span class="product__list--quantity">Đã bán 200</span>
+                            </div>
+                            <div>
+                                <span><i class="product__list--location fa-solid fa-location-dot" style="color: #000000;"></i> Hà Nội</span>
+                                <span class="product__list--rate">
+                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="product__list--item">
+                            <a href="#"><img src="./access/img/imgCategory.jpg" alt=""></a>
+                            <p>Mỹ phẩm nhà TEECON</p>
+                            <div>
+                                <span class="product__list--price">12.000.000 đ</span>
+                                <span class="product__list--quantity">Đã bán 200</span>
+                            </div>
+                            <div>
+                                <span><i class="product__list--location fa-solid fa-location-dot" style="color: #000000;"></i> Hà Nội</span>
+                                <span class="product__list--rate">
+                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="product__list--item">
+                            <a href="#"><img src="./access/img/imgCategory.jpg" alt=""></a>
+                            <p>Mỹ phẩm nhà TEECON</p>
+                            <div>
+                                <span class="product__list--price">12.000.000 đ</span>
+                                <span class="product__list--quantity">Đã bán 200</span>
+                            </div>
+                            <div>
+                                <span><i class="product__list--location fa-solid fa-location-dot" style="color: #000000;"></i> Hà Nội</span>
+                                <span class="product__list--rate">
+                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="product__list--item">
+                            <a href="#"><img src="./access/img/imgCategory.jpg" alt=""></a>
+                            <p>Mỹ phẩm nhà TEECON</p>
+                            <div>
+                                <span class="product__list--price">12.000.000 đ</span>
+                                <span class="product__list--quantity">Đã bán 200</span>
+                            </div>
+                            <div>
+                                <span><i class="product__list--location fa-solid fa-location-dot" style="color: #000000;"></i> Hà Nội</span>
+                                <span class="product__list--rate">
+                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="product__list--item">
+                            <a href="#"><img src="./access/img/imgCategory.jpg" alt=""></a>
+                            <p>Mỹ phẩm nhà TEECON</p>
+                            <div>
+                                <span class="product__list--price">12.000.000 đ</span>
+                                <span class="product__list--quantity">Đã bán 200</span>
+                            </div>
+                            <div>
+                                <span><i class="product__list--location fa-solid fa-location-dot" style="color: #000000;"></i> Hà Nội</span>
+                                <span class="product__list--rate">
+                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="product__list--item">
+                            <a href="#"><img src="./access/img/imgCategory.jpg" alt=""></a>
+                            <p>Mỹ phẩm nhà TEECON</p>
+                            <div>
+                                <span class="product__list--price">12.000.000 đ</span>
+                                <span class="product__list--quantity">Đã bán 200</span>
+                            </div>
+                            <div>
+                                <span><i class="product__list--location fa-solid fa-location-dot" style="color: #000000;"></i> Hà Nội</span>
+                                <span class="product__list--rate">
+                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="product__list--seeMore"><a href="#">&#60;&#60; Xem thêm &#62;&#62;</a></p>
                 </div>
             </div>
         </div>

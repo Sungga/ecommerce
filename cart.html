@@ -23,16 +23,17 @@
     <!-- font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
     <!-- reset css -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
 
     <!-- css -->
     <link rel="stylesheet" href="access/css/base.css">
     <link rel="stylesheet" href="access/css/common.css">
-    <link rel="stylesheet" href="access/css/listProduct.css">
-    <link rel="stylesheet" href="access/responsive/listProduct.css">
+    <link rel="stylesheet" href="access/css/home.css">
+    <link rel="stylesheet" href="access/responsive/home.css">
     <link rel="stylesheet" href="access/responsive/common.css">
-    <!-- Minh da o day hehe -->
 </head>
 <body>
     <!-- <div class="cursor"></div> -->
@@ -92,15 +93,17 @@
                             </ul>
                         </div>
                             <a href="#">Hỗ trợ</a>
-                        <div class="header__user menu" style="display: inline-block; position: relative;">
+                        <!-- <div class="header__user menu" style="display: inline-block; position: relative;">
                             <a href="#"><img class="header__user--avt" src="./access/img/user.png" alt=""> Trương Anh Vũ</a>
-                            <!-- <a href="#">Đăng nhập</a>
-                            <a href="#">Đăng ký</a> -->
                             <ul class="header__user--func">
                                 <li><a href="#">Quản lý</a></li>
                                 <li><a href="#">Tài khoản</a></li>
                                 <li><a href="#">Đăng xuất</a></li>
                             </ul>
+                        </div> --> 
+                        <div class="menu" style="display: inline-block;">
+                            <a href="#">Đăng nhập</a>
+                            <a href="#">Đăng ký</a>
                         </div>
                     </div>
                 </div>
@@ -268,13 +271,13 @@
                 </div>
                 <div class="icon_menu">
                     <span class="material-symbols-outlined">
-                        menu
-                    </span>
+menu
+</span>
                 </div>
             </div>
         </div>
     </div>
-    <div class="menu__box">        
+    <div class="menu__box">
         <div class="header-container">
             <div class="grid">
                 <div class="header__header-top">
@@ -326,20 +329,24 @@
                             </ul>
                         </div>
                             <a href="#">Hỗ trợ</a>
-                        <div class="header__user menu" style="display: inline-block; position: relative;">
+                        <!-- <div class="header__user menu" style="display: inline-block; position: relative;">
                             <a href="#"><img class="header__user--avt" src="./access/img/user.png" alt=""> Trương Anh Vũ</a>
-                            <!-- <a href="#">Đăng nhập</a>
-                            <a href="#">Đăng ký</a> -->
                             <ul class="header__user--func">
                                 <li><a href="#">Quản lý</a></li>
                                 <li><a href="#">Tài khoản</a></li>
                                 <li><a href="#">Đăng xuất</a></li>
                             </ul>
+                        </div> -->
+                        <div class="menu" style="display: contents;">
+                            <a href="#">Đăng nhập</a>
+                            <a href="#">Đăng ký</a>
                         </div>
                     </div>
                 </div>
                 <div class="header__header-bottom">
+
                     <div class="header__header-bottom--left"></div>
+                    
                     <div class="header__header-bottom--right">
                         <div class="header__mess">
                             <!-- when user have message, element <i> will have class named "have__mess" -->
@@ -483,6 +490,7 @@
                             </ul>
                         </div>
                     </div>
+                    
                 </div>
                 <div class="icon_exit">
                     <span class="material-symbols-outlined">
@@ -500,332 +508,11 @@
     </div>
     <!-- END COMMON -->
 
-     <!-- BEGIN LIST PRODUCT -->
-    <div id="listProduct">
-        <div class="grid">
-            <div class="listProduct__container">
-                <!-- LIST PRODUCT TOP -->
-                <div class="listProduct__top">
-                    <p class="listProduct__keySearch">Kết quả tìm kiếm của "áo cưới giấy"</p>
-                </div>
-                <!-- LIST PRODUCT  -->
-                <div class="listProduct__bottom">
-                    <i class="listProduct__bottom--iconMenu fa-solid fa-filter"></i>
-                    <div class="listProduct__bottom--left">
-                        <h1 class="listProduct__filter--title">Bộ lọc</h1>
-                        <div class="listProduct__filterItem listProduct__filterPrice">
-                            <h2 class="listProduct__filterItem--title">Giá</h2>
-                            <span>Từ</span>
-                            <input type="number" name="" id="">
-                            <span>Đến</span>
-                            <input type="number" name="" id="">
-                        </div>
-                        <div class="listProduct__filterItem listProduct__filteraddress">
-                            <h2 class="listProduct__filterItem--title">Nơi bán</h2>
-                            <div class="listProduct__filterItem--item listProduct__filterAddress--item">
-                                <input type="checkbox" name="" id="">
-                                <label>Hà Nội</label>
-                            </div>
-                            <div class="listProduct__filterItem--item listProduct__filterAddress--item">
-                                <input type="checkbox" name="" id="">
-                                <label>Tp. Hồ Chí Minh</label>
-                            </div>
-                            <div class="listProduct__filterItem--item listProduct__filterAddress--item">
-                                <input type="checkbox" name="" id="">
-                                <label>Khác</label>
-                            </div>
-                        </div>
-                        <div class="listProduct__filterItem listProduct listProduct__filterShop">
-                            <h2 class="listProduct__filterItem--title">Shop</h2>
-                            <div class="listProduct__filterItem--item listProduct__filterShop--item">
-                                <input type="checkbox" name="" id="">
-                                <label>Teecon</label>
-                            </div>
-                            <div class="listProduct__filterItem--item listProduct__filterShop--item">
-                                <input type="checkbox" name="" id="">
-                                <label>Ivy Modal</label>
-                            </div>
-                            <div class="listProduct__filterItem--item listProduct__filterShop--item">
-                                <input type="checkbox" name="" id="">
-                                <label>Teelab</label>
-                            </div>
-                            <div class="listProduct__filterItem--item listProduct__filterShop--item">
-                                <input type="checkbox" name="" id="">
-                                <label>Coolmate</label>
-                            </div>
-                            <div class="listProduct__filterItem--item listProduct__filterShop--item">
-                                <input type="checkbox" name="" id="">
-                                <label>Coolmate</label>
-                            </div>
-                            <div class="listProduct__filterItem--item listProduct__filterShop--item">
-                                <input type="checkbox" name="" id="">
-                                <label>Coolmate</label>
-                            </div>
-                            <div class="listProduct__filterItem--item listProduct__filterShop--item">
-                                <input type="checkbox" name="" id="">
-                                <label>Coolmate</label>
-                            </div>
-                            <div class="listProduct__filterItem--item listProduct__filterShop--item">
-                                <input type="checkbox" name="" id="">
-                                <label>Coolmate</label>
-                            </div>
-                            <div class="listProduct__filterItem--item listProduct__filterShop--item">
-                                <input type="checkbox" name="" id="">
-                                <label>Coolmate</label>
-                            </div>
-                            <div class="listProduct__filterItem--item listProduct__filterShop--item">
-                                <input type="checkbox" name="" id="">
-                                <label>Coolmate</label>
-                            </div>
-                            <div class="listProduct__filterItem--item listProduct__filterShop--item">
-                                <input type="checkbox" name="" id="">
-                                <label>Coolmate</label>
-                            </div>
-                            <div class="listProduct__filterItem--item listProduct__filterShop--item">
-                                <input type="checkbox" name="" id="">
-                                <label>Coolmate</label>
-                            </div>
-                            
-                            <div class="listProduct__filterItem--item listProduct__filterShop--item">
-                                <input type="checkbox" name="" id="">
-                                <label>Coolmate</label>
-                            </div>
-                            <div class="listProduct__filterItem--item listProduct__filterShop--item">
-                                <input type="checkbox" name="" id="">
-                                <label>Coolmate</label>
-                            </div>
-                            <div class="listProduct__filterItem--item listProduct__filterShop--item">
-                                <input type="checkbox" name="" id="">
-                                <label>Coolmate</label>
-                            </div>
-                            <div class="listProduct__filterItem--item listProduct__filterShop--item">
-                                <input type="checkbox" name="" id="">
-                                <label>Coolmate</label>
-                            </div>
-                            <div class="listProduct__filterItem--item listProduct__filterShop--item">
-                                <input type="checkbox" name="" id="">
-                                <label>Coolmate</label>
-                            </div>
-                            <div class="listProduct__filterItem--item listProduct__filterShop--item">
-                                <input type="checkbox" name="" id="">
-                                <label>Coolmate</label>
-                            </div>
-                            <div class="listProduct__filterItem--item listProduct__filterShop--item">
-                                <input type="checkbox" name="" id="">
-                                <label>Coolmate</label>
-                            </div>
-                            <div class="listProduct__filterItem--item listProduct__filterShop--item">
-                                <input type="checkbox" name="" id="">
-                                <label>Coolmate</label>
-                            </div>
-                            <div class="listProduct__filterItem--item listProduct__filterShop--item">
-                                <input type="checkbox" name="" id="">
-                                <label>Coolmate</label>
-                            </div>
-                            <div class="listProduct__filterItem--item listProduct__filterShop--item">
-                                <input type="checkbox" name="" id="">
-                                <label>Coolmate</label>
-                            </div>
-                            <div class="listProduct__filterItem--item listProduct__filterShop--item">
-                                <input type="checkbox" name="" id="">
-                                <label>Coolmate</label>
-                            </div>
-                            <div class="listProduct__filterItem--item listProduct__filterShop--item">
-                                <input type="checkbox" name="" id="">
-                                <label>Coolmate</label>
-                            </div>
-                            <div class="listProduct__filterItem--item listProduct__filterShop--item">
-                                <input type="checkbox" name="" id="">
-                                <label>Coolmate</label>
-                            </div>
-                            <div class="listProduct__filterItem--item listProduct__filterShop--item">
-                                <input type="checkbox" name="" id="">
-                                <label>Coolmate</label>
-                            </div>
-                        </div>
-                        <div class="listProduct__filterItem listProduct__filterBtn">
-                            <input type="submit" value="Lọc">
-                        </div>
-                        <i class="listProduct__bottom--iconClose fa-solid fa-x"></i>
-                    </div>
-                    <div class="listProduct__list">
-                        <div class="listProduct__listTop">
-                            <div class="listProduct__listTop--left">
-                                <select name="" id="">
-                                    <option value="">Mới nhất</option>
-                                    <option value="">Cũ nhất</option>
-                                    <option value="">Rẻ nhất</option>
-                                    <option value="">Đắt nhất</option>
-                                </select>
-                            </div>
-                            <div class="listProduct__listTop--right">
-                                <a href="#">&#60;</a>
-                                <a href="#">1/12</a>
-                                <a href="#">&#62;</a>
-                            </div>
-                        </div>
-                        <div class="listProduct__listCenter">
-                            <div class="listProduct__about--item">
-                                <a href="#"><img src="./access/img/productAoThun1.jpg   " alt=""></a>
-                                <p>Mỹ phẩm nhà TEECON</p>
-                                <div>
-                                    <span class="listProduct__about--price">12.000.000 đ</span>
-                                    <span class="listProduct__about--quantity">Đã bán 200</span>
-                                </div>
-                                <div>
-                                    <span><i class="listProduct__about--location fa-solid fa-location-dot" style="color: #000000;"></i> Hà Nội</span>
-                                    <span class="listProduct__about--rate">
-                                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                                        <i class="fa-regular fa-star"></i>
-                                        <i class="fa-regular fa-star"></i>
-                                        <i class="fa-regular fa-star"></i>
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="listProduct__about--item">
-                                <a href="#"><img src="./access/img/imgCategory.jpg" alt=""></a>
-                                <p>Mỹ phẩm nhà TEECON</p>
-                                <div>
-                                    <span class="listProduct__about--price">12.000.000 đ</span>
-                                    <span class="listProduct__about--quantity">Đã bán 200</span>
-                                </div>
-                                <div>
-                                    <span><i class="listProduct__about--location fa-solid fa-location-dot" style="color: #000000;"></i> Hà Nội</span>
-                                    <span class="listProduct__about--rate">
-                                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                                        <i class="fa-regular fa-star"></i>
-                                        <i class="fa-regular fa-star"></i>
-                                        <i class="fa-regular fa-star"></i>
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="listProduct__about--item">
-                                <a href="#"><img src="./access/img/imgCategory.jpg" alt=""></a>
-                                <p>Mỹ phẩm nhà TEECON</p>
-                                <div>
-                                    <span class="listProduct__about--price">12.000.000 đ</span>
-                                    <span class="listProduct__about--quantity">Đã bán 200</span>
-                                </div>
-                                <div>
-                                    <span><i class="listProduct__about--location fa-solid fa-location-dot" style="color: #000000;"></i> Hà Nội</span>
-                                    <span class="listProduct__about--rate">
-                                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                                        <i class="fa-regular fa-star"></i>
-                                        <i class="fa-regular fa-star"></i>
-                                        <i class="fa-regular fa-star"></i>
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="listProduct__about--item">
-                                <a href="#"><img src="./access/img/imgCategory.jpg" alt=""></a>
-                                <p>Mỹ phẩm nhà TEECON</p>
-                                <div>
-                                    <span class="listProduct__about--price">12.000.000 đ</span>
-                                    <span class="listProduct__about--quantity">Đã bán 200</span>
-                                </div>
-                                <div>
-                                    <span><i class="listProduct__about--location fa-solid fa-location-dot" style="color: #000000;"></i> Hà Nội</span>
-                                    <span class="listProduct__about--rate">
-                                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                                        <i class="fa-regular fa-star"></i>
-                                        <i class="fa-regular fa-star"></i>
-                                        <i class="fa-regular fa-star"></i>
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="listProduct__about--item">
-                                <a href="#"><img src="./access/img/imgCategory.jpg" alt=""></a>
-                                <p>Mỹ phẩm nhà TEECON</p>
-                                <div>
-                                    <span class="listProduct__about--price">12.000.000 đ</span>
-                                    <span class="listProduct__about--quantity">Đã bán 200</span>
-                                </div>
-                                <div>
-                                    <span><i class="listProduct__about--location fa-solid fa-location-dot" style="color: #000000;"></i> Hà Nội</span>
-                                    <span class="listProduct__about--rate">
-                                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                                        <i class="fa-regular fa-star"></i>
-                                        <i class="fa-regular fa-star"></i>
-                                        <i class="fa-regular fa-star"></i>
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="listProduct__about--item">
-                                <a href="#"><img src="./access/img/imgCategory.jpg" alt=""></a>
-                                <p>Mỹ phẩm nhà TEECON</p>
-                                <div>
-                                    <span class="listProduct__about--price">12.000.000 đ</span>
-                                    <span class="listProduct__about--quantity">Đã bán 200</span>
-                                </div>
-                                <div>
-                                    <span><i class="listProduct__about--location fa-solid fa-location-dot" style="color: #000000;"></i> Hà Nội</span>
-                                    <span class="listProduct__about--rate">
-                                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                                        <i class="fa-regular fa-star"></i>
-                                        <i class="fa-regular fa-star"></i>
-                                        <i class="fa-regular fa-star"></i>
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="listProduct__about--item">
-                                <a href="#"><img src="./access/img/imgCategory.jpg" alt=""></a>
-                                <p>Mỹ phẩm nhà TEECON</p>
-                                <div>
-                                    <span class="listProduct__about--price">12.000.000 đ</span>
-                                    <span class="listProduct__about--quantity">Đã bán 200</span>
-                                </div>
-                                <div>
-                                    <span><i class="listProduct__about--location fa-solid fa-location-dot" style="color: #000000;"></i> Hà Nội</span>
-                                    <span class="listProduct__about--rate">
-                                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                                        <i class="fa-regular fa-star"></i>
-                                        <i class="fa-regular fa-star"></i>
-                                        <i class="fa-regular fa-star"></i>
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="listProduct__about--item">
-                                <a href="#"><img src="./access/img/imgCategory.jpg" alt=""></a>
-                                <p>Mỹ phẩm nhà TEECON</p>
-                                <div>
-                                    <span class="listProduct__about--price">12.000.000 đ</span>
-                                    <span class="listProduct__about--quantity">Đã bán 200</span>
-                                </div>
-                                <div>
-                                    <span><i class="listProduct__about--location fa-solid fa-location-dot" style="color: #000000;"></i> Hà Nội</span>
-                                    <span class="listProduct__about--rate">
-                                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                                        <i class="fa-regular fa-star"></i>
-                                        <i class="fa-regular fa-star"></i>
-                                        <i class="fa-regular fa-star"></i>
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="listProduct__listBottom">
-                            <a href="#">&#60;</a>
-                            <a href="#" class="focus">1</a>
-                            <a href="#">2</a>
-                            <a href="#">3</a>
-                            <a href="#">4</a>
-                            <a href="#">...</a>
-                            <a href="#">12</a>
-                            <a href="#">&#62;</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <!-- BEGIN CART -->
+    <div id="cart">
+        
     </div>
-    <!-- END LIST PRODUCT -->
+    <!-- END CART -->
 
     <!-- BEGIN FOOTER -->
     <div id="footer">
@@ -908,7 +595,7 @@
     <!-- END FOOTER -->
 
     <!-- js -->
-    <script src="./access/js/js_listProduct.js"></script>
+    <script src="./access/js/js_home.js"></script>
     <script src="./access/js/js_common.js"></script>
 
     <!-- js change cursor -->
