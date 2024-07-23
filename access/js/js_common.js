@@ -32,8 +32,8 @@ search.addEventListener('click', function(){
 // --------------------<< thoát ô tìm kiếm >>----------------
 if (window.matchMedia('only screen and (max-width: 739px)').matches) {
     document.addEventListener('click', function(event) {
-        var isClickInside = search.contains(event.target) || searchBtn.contains(event.target);
-        if (!isClickInside ) {
+        let isClickInside = search.contains(event.target) || searchBtn.contains(event.target);
+        if (!isClickInside) {
             searchBtn.style.display = 'none';
         }
     })
