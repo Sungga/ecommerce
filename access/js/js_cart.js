@@ -109,27 +109,27 @@ btnSelectAllProduct.addEventListener('click', function() {
 });
 
 // -----------------------------------<< js hidden and show element allTotal >>------------------------------
-let footerElement = document.getElementById("footer");
-let blockAllTotal = document.querySelector('.total');
+// let footerElement = document.getElementById("footer");
+// let blockAllTotal = document.querySelector('.total');
 
-let overseeFooter = new IntersectionObserver(function(entries) {
-    entries.forEach(function(item) {
-        if (item.isIntersecting) {
-            blockAllTotal.style.position = 'unset';
-        }
-    });
-});
+// let overseeFooter = new IntersectionObserver(function(entries) {
+//     entries.forEach(function(item) {
+//         if (item.isIntersecting) {
+//             blockAllTotal.style.position = 'sticky';
+//         }
+//     });
+// });
 
-let overseeAllTotal = new IntersectionObserver(function(entries) {
-    entries.forEach(function(item) {
-        if (item.isIntersecting === false) {
-            blockAllTotal.style.position = 'fixed';
-        }
-    });
-});
+// let overseeAllTotal = new IntersectionObserver(function(entries) {
+//     entries.forEach(function(item) {
+//         if (item.isIntersecting === false) {
+//             blockAllTotal.style.position = 'fixed';
+//         }
+//     });
+// });
 
-overseeFooter.observe(footerElement);
-overseeAllTotal.observe(blockAllTotal);
+// overseeFooter.observe(footerElement);
+// overseeAllTotal.observe(blockAllTotal);
 
 // -----------------------------------<< js hidden and show element detail select >>------------------------------
 let detailElement = document.querySelectorAll('.cart__product--detail');
