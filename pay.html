@@ -30,9 +30,10 @@
 
     <!-- css -->
     <link rel="stylesheet" href="access/css/common.css">
-    <link rel="stylesheet" href="access/css/cart.css">
+    <link rel="stylesheet" href="access/css/pay.css">
     <link rel="stylesheet" href="access/responsive/common.css">
     <link rel="stylesheet" href="access/css/base.css">
+    <script src="./"></script>
 </head>
 <body>
     <!-- <div class="cursor"></div> -->
@@ -507,9 +508,583 @@
     </div>
     <!-- END COMMON -->
 
-    <!-- BEGIN CART -->
-    
-    <!-- END CART -->
+    <!-- BEGIN PAY -->
+    <div id="pay">
+        <div class="grid">
+            <div class="payContainer">
+                <div class="pay__location">
+                    <div class="pay__location--title">
+                        <i class="fa-solid fa-location-dot"></i>
+                        Địa Chỉ Nhận Hàng
+                    </div>
+                    <div class="pay__loction--detail">
+                        <span>Trương Anh Vũ (+84) 966282165</span>
+                        <span>Xóm Trại Rô, Huyện Hiệp Hòa, Bắc Giang</span>
+                        <span>Thay Đổi</span>
+                    </div>
+                </div>
+                <div class="pay__product">
+                    <table>
+                        <tr>
+                            <th class="payProduct__header--detail">Sản phẩm</th>
+                            <th>Phân loại</th>
+                            <th>Đơn giá</th>
+                            <th>Số lượng</th>
+                            <th>Thành tiền</th>
+                        </tr>
+                        <tr class="pay__shopName">
+                            <td colspan="5"><span>Shop Teecon</span></td>
+                        </tr>
+                        <tr>
+                            <td class="payProduct__product--detail">
+                                <div class="payProduct__product--img">
+                                    <img src="./access/img/productAoThun1.jpg" alt="">
+                                </div>
+                                <p>Đèn học tích điện 3 chế độ sáng TinTin dễ thương cho bé , Đèn ngủ ánh sáng vàng bóng LED bảo hành 1 tháng</p>
+                            </td>
+                            <td>Bò con vui tính, Màu xanh</td>
+                            <td>65000</td>
+                            <td>1</td>
+                            <td>65000</td>
+                        </tr>
+                        <tr>
+                            <td class="payProduct__product--detail">
+                                <div class="payProduct__product--img">
+                                    <img src="./access/img/productAoThun1.jpg" alt="">
+                                </div>
+                                <p>Đèn học tích điện 3 chế độ sáng TinTin dễ thương cho bé , Đèn ngủ ánh sáng vàng bóng LED bảo hành 1 tháng</p>
+                            </td>
+                            <td>Bò con vui tính, Màu xanh</td>
+                            <td>65000</td>
+                            <td>1</td>
+                            <td>65000</td>
+                        </tr>
+                        <tr class="voucher__shop">
+                            <td colspan="5">
+                                <span class="voucher__shop--title">
+                                    <i class="fa-solid fa-ticket"></i>
+                                    Voucher của shop
+                                </span>
+                                <span class="voucher__shop--voucher">-40k</span>
+                                <span class="voucher__shop--change">Đổi voucher</span>
+                                <div class="voucher__shop--list">
+                                    <div>
+                                        <input type="radio" name="voucher_1" id="voucher_1_1" value="voucher_1_1">
+                                        <label for="voucher_1_1">
+                                            <img src="./access/img/logoShop.jpg" alt="">
+                                            <div class="voucher__shop--item">
+                                                <div>
+                                                    <p>Giảm 3% - Giảm tối đa 20k</p>
+                                                    <p>Đơn tối thiểu 200k</p>
+                                                    <p>Thời gian còn lại: 1 ngày <a href="#">Điều kiện</a></p>
+                                                </div>
+                                                <div class="voucher__shop--check"></div>
+                                            </div>
+                                        </label>
+                                        <input type="radio" name="voucher_1" id="voucher_1_2" value="voucher_1_2">
+                                        <label for="voucher_1_2">
+                                            <img src="./access/img/logoShop.jpg" alt="">
+                                            <div class="voucher__shop--item">
+                                                <div>
+                                                    <p>Giảm 3% - Giảm tối đa 20k</p>
+                                                    <p>Đơn tối thiểu 200k</p>
+                                                    <p>Thời gian còn lại: 1 ngày <a href="#">Điều kiện</a></p>
+                                                </div>
+                                                <div class="voucher__shop--check"></div>
+                                            </div>
+                                        </label>
+                                        <input type="radio" name="voucher_1" id="voucher_1_2" value="voucher_1_2">
+                                        <label for="voucher_1_2">
+                                            <img src="./access/img/logoShop.jpg" alt="">
+                                            <div class="voucher__shop--item">
+                                                <div>
+                                                    <p>Giảm 3% - Giảm tối đa 20k</p>
+                                                    <p>Đơn tối thiểu 200k</p>
+                                                    <p>Thời gian còn lại: 1 ngày <a href="#">Điều kiện</a></p>
+                                                </div>
+                                                <div class="voucher__shop--check"></div>
+                                            </div>
+                                        </label>
+                                        <input type="radio" name="voucher_1" id="voucher_1_2" value="voucher_1_2">
+                                        <label for="voucher_1_2">
+                                            <img src="./access/img/logoShop.jpg" alt="">
+                                            <div class="voucher__shop--item">
+                                                <div>
+                                                    <p>Giảm 3% - Giảm tối đa 20k</p>
+                                                    <p>Đơn tối thiểu 200k</p>
+                                                    <p>Thời gian còn lại: 1 ngày <a href="#">Điều kiện</a></p>
+                                                </div>
+                                                <div class="voucher__shop--check"></div>
+                                            </div>
+                                        </label>
+                                    </div>
+                                    <input type="submit" value="Thay đổi" class="inputBase">
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="ship">
+                            <td colspan="5">
+                                <div class="ship__container">
+                                    <div class="ship__left">
+                                        <span>Lời nhắn: </span>
+                                        <input type="text" placeholder="Lưu ý cho người bán...">
+                                    </div>
+                                    <div class="ship__right">
+                                        <div class="ship__right--left">
+                                            Đơn vị vận chuyển: 
+                                        </div>
+                                        <div class="ship__right--right">
+                                            <div class="ship__right--top">
+                                                <p class="ship__name">Giao hàng Sungga</p>
+                                                <p>267000</p>
+                                                <p class="ship__change">Thay đổi</p>
+                                            </div>
+                                            <div class="ship__right--bottom">
+                                                <p>
+                                                    <i class="fa-solid fa-truck-fast"></i>
+                                                    <span>Đơn hàng sẽ được giao từ 27 tháng 7 - 39 tháng 7</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="ship__list">
+                                        <div class="ship__list--container">
+                                            <div class="ship__list--list">
+                                                <input type="radio" name="ship" id="ship_1">
+                                                <label for="ship_1">
+                                                    <div class="ship__list--top">
+                                                        <p class="ship__name">Giao hàng Sungga</p>
+                                                        <p>267000</p>
+                                                        <p class="ship__checked">&#8730;</p>
+                                                    </div>
+                                                    <div class="ship__list--bottom">
+                                                        <p>
+                                                            <i class="fa-solid fa-truck-fast"></i>
+                                                            <span>Đơn hàng sẽ được giao từ 27 tháng 7 - 39 tháng 7</span>
+                                                        </p>
+                                                    </div>
+                                                </label>
+                                                <input type="radio" name="ship" id="ship_2">
+                                                <label for="ship_2">
+                                                    <div class="ship__list--top">
+                                                        <p class="ship__name">Giao hàng Sungga</p>
+                                                        <p>267000</p>
+                                                        <p class="ship__checked">&#8730;</p>
+                                                    </div>
+                                                    <div class="ship__list--bottom">
+                                                        <p>
+                                                            <i class="fa-solid fa-truck-fast"></i>
+                                                            <span>Đơn hàng sẽ được giao từ 27 tháng 7 - 39 tháng 7</span>
+                                                        </p>
+                                                    </div>
+                                                </label>
+                                                <input type="radio" name="ship" id="ship_3">
+                                                <label for="ship_3">
+                                                    <div class="ship__list--top">
+                                                        <p class="ship__name">Giao hàng Sungga</p>
+                                                        <p>267000</p>
+                                                        <p class="ship__checked">&#8730;</p>
+                                                    </div>
+                                                    <div class="ship__list--bottom">
+                                                        <p>
+                                                            <i class="fa-solid fa-truck-fast"></i>
+                                                            <span>Đơn hàng sẽ được giao từ 27 tháng 7 - 39 tháng 7</span>
+                                                        </p>
+                                                    </div>
+                                                </label>
+                                                <input type="radio" name="ship" id="ship_4">
+                                                <label for="ship_4">
+                                                    <div class="ship__list--top">
+                                                        <p class="ship__name">Giao hàng Sungga</p>
+                                                        <p>267000</p>
+                                                        <p class="ship__checked">&#8730;</p>
+                                                    </div>
+                                                    <div class="ship__list--bottom">
+                                                        <p>
+                                                            <i class="fa-solid fa-truck-fast"></i>
+                                                            <span>Đơn hàng sẽ được giao từ 27 tháng 7 - 39 tháng 7</span>
+                                                        </p>
+                                                    </div>
+                                                </label>
+                                                <input type="radio" name="ship" id="ship_5">
+                                                <label for="ship_5">
+                                                    <div class="ship__list--top">
+                                                        <p class="ship__name">Giao hàng Sungga</p>
+                                                        <p>267000</p>
+                                                        <p class="ship__checked">&#8730;</p>
+                                                    </div>
+                                                    <div class="ship__list--bottom">
+                                                        <p>
+                                                            <i class="fa-solid fa-truck-fast"></i>
+                                                            <span>Đơn hàng sẽ được giao từ 27 tháng 7 - 39 tháng 7</span>
+                                                        </p>
+                                                    </div>
+                                                </label>
+                                                <input type="radio" name="ship" id="ship_6">
+                                                <label for="ship_6">
+                                                    <div class="ship__list--top">
+                                                        <p class="ship__name">Giao hàng Sungga</p>
+                                                        <p>267000</p>
+                                                        <p class="ship__checked">&#8730;</p>
+                                                    </div>
+                                                    <div class="ship__list--bottom">
+                                                        <p>
+                                                            <i class="fa-solid fa-truck-fast"></i>
+                                                            <span>Đơn hàng sẽ được giao từ 27 tháng 7 - 39 tháng 7</span>
+                                                        </p>
+                                                    </div>
+                                                </label>
+                                            </div>
+                                            <input type="submit" value="Thay đổi" class="inputBase">
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="total">
+                            <td colspan="5">
+                                <span>Tổng số tiền (50 sản phẩm):</span> 
+                                <span>4500000</span>
+                            </td>
+                        </tr>
+                        <tr class="pay__shopName">
+                            <td colspan="5"><span>Shop Teecon</span></td>
+                        </tr>
+                        <tr>
+                            <td class="payProduct__product--detail">
+                                <div class="payProduct__product--img">
+                                    <img src="./access/img/productAoThun1.jpg" alt="">
+                                </div>
+                                <p>Đèn học tích điện 3 chế độ sáng TinTin dễ thương cho bé , Đèn ngủ ánh sáng vàng bóng LED bảo hành 1 tháng</p>
+                            </td>
+                            <td>Bò con vui tính, Màu xanh</td>
+                            <td>65000</td>
+                            <td>1</td>
+                            <td>65000</td>
+                        </tr>
+                        <tr class="voucher__shop">
+                            <td colspan="5">
+                                <span class="voucher__shop--title">
+                                    <i class="fa-solid fa-ticket"></i>
+                                    Voucher của shop
+                                </span>
+                                <span class="voucher__shop--voucher">-40k</span>
+                                <span class="voucher__shop--change">Đổi voucher</span>
+                                <div class="voucher__shop--list">
+                                    <div>
+                                        <input type="radio" name="voucher_1" id="voucher_1_1" value="voucher_1_1">
+                                        <label for="voucher_1_1">
+                                            <img src="./access/img/logoShop.jpg" alt="">
+                                            <div class="voucher__shop--item">
+                                                <div>
+                                                    <p>Giảm 3% - Giảm tối đa 20k</p>
+                                                    <p>Đơn tối thiểu 200k</p>
+                                                    <p>Thời gian còn lại: 1 ngày <a href="#">Điều kiện</a></p>
+                                                </div>
+                                                <div class="voucher__shop--check"></div>
+                                            </div>
+                                        </label>
+                                        <input type="radio" name="voucher_1" id="voucher_1_2" value="voucher_1_2">
+                                        <label for="voucher_1_2">
+                                            <img src="./access/img/logoShop.jpg" alt="">
+                                            <div class="voucher__shop--item">
+                                                <div>
+                                                    <p>Giảm 3% - Giảm tối đa 20k</p>
+                                                    <p>Đơn tối thiểu 200k</p>
+                                                    <p>Thời gian còn lại: 1 ngày <a href="#">Điều kiện</a></p>
+                                                </div>
+                                                <div class="voucher__shop--check"></div>
+                                            </div>
+                                        </label>
+                                        <input type="radio" name="voucher_1" id="voucher_1_2" value="voucher_1_2">
+                                        <label for="voucher_1_2">
+                                            <img src="./access/img/logoShop.jpg" alt="">
+                                            <div class="voucher__shop--item">
+                                                <div>
+                                                    <p>Giảm 3% - Giảm tối đa 20k</p>
+                                                    <p>Đơn tối thiểu 200k</p>
+                                                    <p>Thời gian còn lại: 1 ngày <a href="#">Điều kiện</a></p>
+                                                </div>
+                                                <div class="voucher__shop--check"></div>
+                                            </div>
+                                        </label>
+                                        <input type="radio" name="voucher_1" id="voucher_1_2" value="voucher_1_2">
+                                        <label for="voucher_1_2">
+                                            <img src="./access/img/logoShop.jpg" alt="">
+                                            <div class="voucher__shop--item">
+                                                <div>
+                                                    <p>Giảm 3% - Giảm tối đa 20k</p>
+                                                    <p>Đơn tối thiểu 200k</p>
+                                                    <p>Thời gian còn lại: 1 ngày <a href="#">Điều kiện</a></p>
+                                                </div>
+                                                <div class="voucher__shop--check"></div>
+                                            </div>
+                                        </label>
+                                    </div>
+                                    <input type="submit" value="Thay đổi" class="inputBase">
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="ship">
+                            <td colspan="5">
+                                <div class="ship__container">
+                                    <div class="ship__left">
+                                        <span>Lời nhắn: </span>
+                                        <input type="text" placeholder="Lưu ý cho người bán...">
+                                    </div>
+                                    <div class="ship__right">
+                                        <div class="ship__right--left">
+                                            Đơn vị vận chuyển: 
+                                        </div>
+                                        <div class="ship__right--right">
+                                            <div class="ship__right--top">
+                                                <p class="ship__name">Giao hàng Sungga</p>
+                                                <p>267000</p>
+                                                <p class="ship__change">Thay đổi</p>
+                                            </div>
+                                            <div class="ship__right--bottom">
+                                                <p>
+                                                    <i class="fa-solid fa-truck-fast"></i>
+                                                    <span>Đơn hàng sẽ được giao từ 27 tháng 7 - 39 tháng 7</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="ship__list">
+                                        <div class="ship__list--container">
+                                            <div class="ship__list--list">
+                                                <input type="radio" name="ship" id="ship_1">
+                                                <label for="ship_1">
+                                                    <div class="ship__list--top">
+                                                        <p class="ship__name">Giao hàng Sungga</p>
+                                                        <p>267000</p>
+                                                        <p class="ship__checked">&#8730;</p>
+                                                    </div>
+                                                    <div class="ship__list--bottom">
+                                                        <p>
+                                                            <i class="fa-solid fa-truck-fast"></i>
+                                                            <span>Đơn hàng sẽ được giao từ 27 tháng 7 - 39 tháng 7</span>
+                                                        </p>
+                                                    </div>
+                                                </label>
+                                                <input type="radio" name="ship" id="ship_2">
+                                                <label for="ship_2">
+                                                    <div class="ship__list--top">
+                                                        <p class="ship__name">Giao hàng Sungga</p>
+                                                        <p>267000</p>
+                                                        <p class="ship__checked">&#8730;</p>
+                                                    </div>
+                                                    <div class="ship__list--bottom">
+                                                        <p>
+                                                            <i class="fa-solid fa-truck-fast"></i>
+                                                            <span>Đơn hàng sẽ được giao từ 27 tháng 7 - 39 tháng 7</span>
+                                                        </p>
+                                                    </div>
+                                                </label>
+                                                <input type="radio" name="ship" id="ship_3">
+                                                <label for="ship_3">
+                                                    <div class="ship__list--top">
+                                                        <p class="ship__name">Giao hàng Sungga</p>
+                                                        <p>267000</p>
+                                                        <p class="ship__checked">&#8730;</p>
+                                                    </div>
+                                                    <div class="ship__list--bottom">
+                                                        <p>
+                                                            <i class="fa-solid fa-truck-fast"></i>
+                                                            <span>Đơn hàng sẽ được giao từ 27 tháng 7 - 39 tháng 7</span>
+                                                        </p>
+                                                    </div>
+                                                </label>
+                                                <input type="radio" name="ship" id="ship_4">
+                                                <label for="ship_4">
+                                                    <div class="ship__list--top">
+                                                        <p class="ship__name">Giao hàng Sungga</p>
+                                                        <p>267000</p>
+                                                        <p class="ship__checked">&#8730;</p>
+                                                    </div>
+                                                    <div class="ship__list--bottom">
+                                                        <p>
+                                                            <i class="fa-solid fa-truck-fast"></i>
+                                                            <span>Đơn hàng sẽ được giao từ 27 tháng 7 - 39 tháng 7</span>
+                                                        </p>
+                                                    </div>
+                                                </label>
+                                                <input type="radio" name="ship" id="ship_5">
+                                                <label for="ship_5">
+                                                    <div class="ship__list--top">
+                                                        <p class="ship__name">Giao hàng Sungga</p>
+                                                        <p>267000</p>
+                                                        <p class="ship__checked">&#8730;</p>
+                                                    </div>
+                                                    <div class="ship__list--bottom">
+                                                        <p>
+                                                            <i class="fa-solid fa-truck-fast"></i>
+                                                            <span>Đơn hàng sẽ được giao từ 27 tháng 7 - 39 tháng 7</span>
+                                                        </p>
+                                                    </div>
+                                                </label>
+                                                <input type="radio" name="ship" id="ship_6">
+                                                <label for="ship_6">
+                                                    <div class="ship__list--top">
+                                                        <p class="ship__name">Giao hàng Sungga</p>
+                                                        <p>267000</p>
+                                                        <p class="ship__checked">&#8730;</p>
+                                                    </div>
+                                                    <div class="ship__list--bottom">
+                                                        <p>
+                                                            <i class="fa-solid fa-truck-fast"></i>
+                                                            <span>Đơn hàng sẽ được giao từ 27 tháng 7 - 39 tháng 7</span>
+                                                        </p>
+                                                    </div>
+                                                </label>
+                                            </div>
+                                            <input type="submit" value="Thay đổi" class="inputBase">
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="total">
+                            <td colspan="5">
+                                <span>Tổng số tiền (50 sản phẩm):</span> 
+                                <span>4500000</span>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+
+                <!-- main -->
+                <div class="pay__voucher--main">
+                    <p>
+                        <i class="fa-solid fa-ticket"></i>
+                        Sungga Voucher
+                    </p>
+                    <p>Chọn Voucher</p>
+                </div>
+                <div class="pay__voucherMain--list">
+                    <div class="pay__voucherMainList--container">
+                        <div class="pay__title--base">Sungga Voucher</div>
+                        <div class="pay__voucherMainList--list">
+                            <div class="pay__voucherMain--selectedItem">
+                                <div class="pay__voucherMain--img">
+                                    <img src="./access/img/logoShop.jpg" alt="">
+                                </div>
+                                <div>
+                                    <p>Giảm 3% - Giảm tối đa 20k</p>
+                                    <p>Đơn tối thiểu 200k</p>
+                                    <p>Thời gian còn lại: 1 ngày <a href="#">Điều kiện</a></p>
+                                </div>
+                            </div>
+                            <div class="pay__voucherMain--selectedItem">
+                                <div class="pay__voucherMain--img">
+                                    <img src="./access/img/logoShop.jpg" alt="">
+                                </div>
+                                <div>
+                                    <p>Giảm 3% - Giảm tối đa 20k</p>
+                                    <p>Đơn tối thiểu 200k</p>
+                                    <p>Thời gian còn lại: 1 ngày <a href="#">Điều kiện</a></p>
+                                </div>
+                            </div>
+                            <div class="pay__voucherMain--selectedItem">
+                                <div class="pay__voucherMain--img">
+                                    <img src="./access/img/logoShop.jpg" alt="">
+                                </div>
+                                <div>
+                                    <p>Giảm 3% - Giảm tối đa 20k</p>
+                                    <p>Đơn tối thiểu 200k</p>
+                                    <p>Thời gian còn lại: 1 ngày <a href="#">Điều kiện</a></p>
+                                </div>
+                            </div>
+                            <div class="pay__voucherMain--selectedItem">
+                                <div class="pay__voucherMain--img">
+                                    <img src="./access/img/logoShop.jpg" alt="">
+                                </div>
+                                <div>
+                                    <p>Giảm 3% - Giảm tối đa 20k</p>
+                                    <p>Đơn tối thiểu 200k</p>
+                                    <p>Thời gian còn lại: 1 ngày <a href="#">Điều kiện</a></p>
+                                </div>
+                            </div>
+                            <div class="pay__voucherMain--selectedItem">
+                                <div class="pay__voucherMain--img">
+                                    <img src="./access/img/logoShop.jpg" alt="">
+                                </div>
+                                <div>
+                                    <p>Giảm 3% - Giảm tối đa 20k</p>
+                                    <p>Đơn tối thiểu 200k</p>
+                                    <p>Thời gian còn lại: 1 ngày <a href="#">Điều kiện</a></p>
+                                </div>
+                            </div>
+                            <div class="pay__voucherMain--selectedItem">
+                                <div class="pay__voucherMain--img">
+                                    <img src="./access/img/logoShop.jpg" alt="">
+                                </div>
+                                <div>
+                                    <p>Giảm 3% - Giảm tối đa 20k</p>
+                                    <p>Đơn tối thiểu 200k</p>
+                                    <p>Thời gian còn lại: 1 ngày <a href="#">Điều kiện</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <input type="submit" value="Xác nhận" class="inputBase">
+                    </div>
+                </div>
+                <div class="pay__voucherMain--selected">
+                    <div class="pay__voucherMain--selectedItem">
+                        <div class="pay__voucherMain--img">
+                            <img src="./access/img/logoShop.jpg" alt="">
+                        </div>
+                        <div>
+                            <p>Giảm 3% - Giảm tối đa 20k</p>
+                            <p>Đơn tối thiểu 200k</p>
+                            <p>Thời gian còn lại: 1 ngày <a href="#">Điều kiện</a></p>
+                        </div>
+                    </div>
+                    <div class="pay__voucherMain--selectedItem">
+                        <div class="pay__voucherMain--img">
+                            <img src="./access/img/logoShop.jpg" alt="">
+                        </div>
+                        <div>
+                            <p>Giảm 3% - Giảm tối đa 20k</p>
+                            <p>Đơn tối thiểu 200k</p>
+                            <p>Thời gian còn lại: 1 ngày <a href="#">Điều kiện</a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- payment method -->
+                <div class="pay__method">
+                    <div class="pay__method--title">Phương Thức Thanh Toán</div>
+                </div>
+
+                <!-- total main-->
+                <div class="totalMain">
+                    <div class="totalMain__container">
+                        <div class="totalMain__item totalMain__totalItemCost">
+                            <p>Tổng tiền hàng</p>
+                            <p>1160000</p>
+                        </div>
+                        <div class="totalMain__item totalMain__shippingFee">
+                            <p>Phí vận chuyển</p>
+                            <p>1160000</p>
+                        </div>
+                        <div class="totalMain__item totalMain__totalDiscountVoucher">
+                            <p>Tổng cộng Voucher giảm giá</p>
+                            <p>1160000</p>
+                        </div>
+                        <div class="totalMain__item totalMain__totalAmountDue">
+                            <p>Tổng thanh toán</p>
+                            <p>1160000</p>
+                        </div>
+                    </div>
+                    <div class="totalMain__button">
+                        <button class="inputBase">Thanh toán</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END PAY -->
 
     <!-- BEGIN FOOTER -->
     <div id="footer">
@@ -594,7 +1169,8 @@
     <!-- js -->
     <!-- <script src="./access/js/js_home.js"></script> -->
     <script src="./access/js/js_common.js"></script>
-    <script src="./access/js/js_cart.js"></script>
+    <script type="module" src="./access/js/js_pay.js"></script>
+    <!-- <script type="module" src="./access/js/js_base.js"></script> -->
 
     <!-- js change cursor -->
     <script src="./access/js/js_cursor.js"></script>

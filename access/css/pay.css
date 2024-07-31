@@ -1,0 +1,521 @@
+/* css for base */
+.pay__title--base {
+    font-size: 2rem;
+    padding: 20px 0 40px;
+    text-transform: uppercase;
+}
+
+/* --------------------------------<< pay >>------------------------------- */
+.pay__location {
+    margin: 10px 0 24px;
+    padding: 30px;
+    border-bottom: 1px solid var(--color-pale);
+}
+
+.pay__location--title {
+    font-size: 1.8rem;
+    color: var(--color-primary);
+    margin-bottom: 20px;
+}
+
+.pay__loction--detail {
+    font-size: 1.6rem;
+}
+
+.pay__loction--detail span:nth-child(1) {
+    margin-right: 16px;
+    font-weight: 600;
+}
+
+.pay__loction--detail span:nth-child(2) {
+    margin-right: 24px;
+}
+
+.pay__loction--detail span:nth-child(3) {
+    color: var(--color-primary);
+    cursor: pointer;
+}
+
+.pay__product {
+    width: 100%;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    padding: 16px;
+    font-size: 1.5rem;
+    box-sizing: border-box;
+    text-align: left;
+}
+
+tr:first-child {
+    border-bottom: 1px solid var(--color-pale);
+}
+
+tr td:nth-child(3),
+tr td:nth-child(4),
+tr td:nth-child(5),
+tr th:nth-child(3),
+tr th:nth-child(4),
+tr th:nth-child(5) {
+    text-align: center;
+}
+
+.payProduct__header--detail {
+    width: 450px;
+}
+
+.pay__shopName {
+    color: var(--color-primary);
+}
+
+.pay__shopName span {
+    cursor: pointer;
+}
+
+.payProduct__product--detail {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.payProduct__product--img {
+    width: 80px;
+    height: 80px;
+}
+
+.payProduct__product--detail img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.payProduct__product--detail p {
+    width: calc(100% - 100px);
+    height: 100%;
+
+    /* gioi han 2 dong` */
+    line-height: 2rem;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+}
+
+.voucher__shop td {
+    text-align: right;
+    position: relative;
+}
+
+.voucher__shop i {
+    color: var(--color-red);
+    margin-right: 4px;
+}
+
+.voucher__shop td {
+    border-top: 1px solid var(--color-super-pale);
+    padding: 28px 24px;
+}
+
+.voucher__shop--title {
+    margin-right: 28px;
+}
+
+.voucher__shop--voucher {
+    margin-right: 28px;
+    padding: 4px 8px;
+    font-size: 1.3rem;
+    border: 2px solid var(--color-red);
+    border-radius: 8px 0;
+}
+
+.voucher__shop--change {
+    color: var(--color-primary);
+    cursor: pointer;
+}
+
+.voucher__shop--list {
+    display: none;
+    width: 500px;
+    box-sizing: border-box;
+    position: absolute;
+    border: 1px solid var(--color-primary);
+    background-color: var(--color-white);
+    top: 56px;
+    right: 0;
+    padding-bottom: 50px;
+
+    z-index: 500;
+}
+
+.voucher__shop--list>div {
+    max-height: 300px;
+    overflow-y: scroll;
+    border-bottom: 1px solid var(--color-super-pale);
+}
+
+.voucher__shop--list::before {
+    content: "";
+    position: absolute;
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent transparent var(--color-primary) transparent;
+    top: -20px;
+    right: 50px;
+}
+
+.voucher__shop--list input[type="radio"] {
+    display: none;
+}
+
+.voucher__shop--list label {
+    user-select: none;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--color-super-pale);
+}
+
+.voucher__shop--list label:last-child {
+    border: none;
+}
+
+.voucher__shop--list img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    padding: 16px;
+    margin-right: 8px;
+}
+
+.voucher__shop--item {
+    width: calc(100% - 82px - 8px);
+    text-align: left;
+    line-height: 2.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.voucher__shop--item a {
+    color: var(--color-primary);
+    margin-left: 20px;
+}
+
+.voucher__shop--check {
+    width: 10px;
+    height: 10px;
+    border: 1px solid var(--color-primary);
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.voucher__shop--list input[type="radio"]:checked + label .voucher__shop--check {
+    background-color: var(--color-primary);
+}
+
+.voucher__shop--list input[type="submit"] {
+    position: absolute;
+    right: 10px;
+    bottom: 5px;
+}
+
+.ship td {
+    border-top: 1px solid var(--color-super-pale);
+    border-bottom: 1px solid var(--color-super-pale);
+}
+
+.ship__container {
+    padding: 30px 0;
+    display: flex;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.ship__left {
+    width: 40%;
+}
+
+.ship__left input {
+    margin: 0 16px;
+    padding: 8px;
+    width: 70%;
+    outline: none;
+    border: 1px solid var(--color-pale);
+}
+
+.ship__right {
+    border-left: 1px solid var(--color-super-pale);
+    padding-left: 40px;
+}
+
+.ship__right {
+    display: flex;
+    width: 60%;
+}
+
+.ship__right--left {
+    margin-right: 20px;
+    width: 20%;
+}
+
+.ship__right--right {
+    width: calc(100% - 20%);
+}
+
+.ship__right--top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 16px;
+}
+
+.ship__name {
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.ship__change {
+    color: var(--color-primary);
+    cursor: pointer;
+    user-select: none;
+}
+
+.ship__right--bottom {
+    color: var(--color-green);
+}
+
+.ship__list {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 2000;
+}
+
+.ship__list--container {
+    margin: auto;
+    width: 500px;
+    background-color: var(--color-white);
+    padding: 16px 16px 50px 16px;
+    box-sizing: border-box;
+    position: relative;
+    border: 1px solid var(--color-black);
+}
+
+.ship__list--list {
+    overflow-y: scroll;
+    max-height: 500px;
+    margin-bottom: 20px;
+}
+
+.ship__list--container input[type="radio"] {
+    display: none;
+}
+
+.ship__list--container label {
+    padding: 20px 0 40px;
+    display: block;
+    position: relative;
+}
+
+.ship__list--container label:last-child {
+    padding-bottom: 20px;
+}
+
+.ship__list--top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 16px;
+    width: 90%;
+}
+
+.ship__list--bottom {
+    color: var(--color-green);
+}
+
+.ship__checked {
+    color: var(--color-primary);
+    border: 1px solid var(--color-primary);
+    padding: 4px 8px 3px 6px;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    display: none;
+    position: absolute;
+    right: 0;
+}
+
+.ship__list--container input[type="radio"]:checked + label .ship__checked {
+    display: block;
+}
+
+.ship__list--container input[type="submit"] {
+    position: absolute;
+    right: 20px;
+    bottom: 16px;
+}
+
+.total td {
+    text-align: right;
+    padding: 40px 16px;
+    border-bottom: 1px solid var(--color-pale);
+}
+
+.total td span:nth-child(1) {
+    margin-right: 20px;
+}
+
+.total td span:nth-child(2) {
+    font-size: 2rem;
+    color: var(--color-red);
+}
+
+.pay__voucher--main {
+    display: flex;
+    padding: 40px 16px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pay__voucher--main > p:nth-child(1) {
+    font-size: 1.8rem;
+}
+
+.pay__voucher--main > p:nth-child(1) > i {
+    color: var(--color-red);
+    margin-right: 8px;
+}
+
+.pay__voucher--main > p:nth-child(2) {
+    font-size: 1.5rem;
+    color: var(--color-primary);
+    user-select: none;
+    cursor: pointer;
+}
+
+.pay__voucherMain--list {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2000;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.pay__voucherMainList--container {
+    margin: auto;
+    width: 500px;
+    padding: 16px 16px 60px;
+    background-color: var(--color-white);
+    position: relative;
+}
+
+.pay__voucherMainList--list {
+    max-height: 400px;
+    overflow-y: scroll;
+}
+
+.pay__voucherMainList--container input[type="submit"] {
+    position: absolute;
+    bottom: 10px;
+    right: 16px;
+}
+
+.pay__voucherMain--selected {
+    width: 100%;
+    padding: 0 16px 32px;
+    border-bottom: 1px solid var(--color-pale);
+    box-sizing: border-box;
+}
+
+.pay__voucherMain--selectedItem {
+    display: flex;
+    padding-bottom: 8px;
+    margin-bottom: 8px;
+    border-bottom: 1px solid var(--color-super-pale);
+}
+
+.pay__voucherMain--selectedItem:last-child {
+    border-bottom: none;
+}
+
+.pay__voucherMain--img {
+    width: 70px;
+    min-height: 70px;
+    display: flex;
+    background-color: var(--color-primary);
+    margin-right: 16px;
+}
+
+.pay__voucherMain--img img {
+    margin: auto;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.pay__voucherMain--selectedItem p {
+    font-size: 1.4rem;
+    line-height: 2.2rem;
+}
+
+.pay__voucherMain--selectedItem a {
+    margin-left: 8px;
+}
+
+/* ---<< payment method >>------ */
+.pay__method {
+    padding: 40px 16px;
+    border-bottom: 1px solid var(--color-pale);
+}
+
+.pay__method--title {
+    font-size: 1.8rem;
+}
+
+/* ------<< total >>--------- */
+.totalMain {
+    padding: 32px 16px 20px;
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+
+.totalMain__container {
+    min-width: 400px;
+}
+
+.totalMain__item {
+    display: flex;
+    justify-content: space-between;
+    min-width: 100%;
+    padding: 8px 0;
+}
+
+.totalMain__item p {
+    font-size: 1.5rem;
+    margin-left: 16px;
+}
+
+.totalMain__button {
+    margin-top: 20px;
+    padding: 20px 0 0;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    border-top: 1px solid var(--color-super-pale);
+}
+
+.totalMain__button button {
+    padding: 12px 40px;
+    font-size: 1.5rem;
+}
